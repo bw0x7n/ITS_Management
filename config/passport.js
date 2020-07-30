@@ -1,7 +1,7 @@
 var LocalStrategy = require("passport-local").Strategy;
 
 var mysql = require('mysql');
-var bcrypt = require('bcrypt-nodejs');
+var bcrypt = require('bcryptjs');
 var dbconfig = require('./database');
 var connection = mysql.createConnection(dbconfig.connection);
 
@@ -45,26 +45,21 @@ module.exports = function(passport) {
     // });
 
 
-    async function crypting() {
-       try {
-      const salt = await bcrypt.genSalt(10);
-      const hash = await bcrypt.hash(password, salt);
-    } catch (e) {
-      console.log(e)
-    } }
+ 
+    var salt = bcrypt.genSaltSync(10);
+    var hash = bcrypt.hashSync(password, salt);
+ 
 
-
-
-    const salt = bcrypt.genSaltSync(10);
-    const hash = bcrypt.hashSync(password, salt);
-
-      console.log(password) ; 
+    console.log(hash) ; 
  
      var newUserMysql = {
       username: username,
       password: hash
      };
 
+
+
+     console.log(newUserMysql.password);
      var insertQuery = "INSERT INTO users (username, password) values (?, ?)";
 
      connection.query(insertQuery, [newUserMysql.username, newUserMysql.password],
@@ -101,15 +96,23 @@ module.exports = function(passport) {
      return done(null, false, req.flash('loginMessage', 'No User Found'));
     }
 
-    bcrypt.compare(password,rows[0].password, (err, succ) => {
-    console.log(succ); 
-      // if (!succ) { 
-      //   return done(null,false,  rows[0]);
+
+    console.log(password) ;
+    console.log(rows[0].password);
+
+    var bool = bcrypt.compareSync(password, rows[0].password); // true
+
+console.log(bool);
+
+    // bcrypt.compare(password,rows[0].password, (err, succ) => {
+    // console.log(succ); 
+    //   // if (!succ) { 
+    //   //   return done(null,false,  rows[0]);
       
-      // }
-    } ) ; 
+    //   // }
+    // } ) ; 
           
-          console.log(rows[0].password);
+        
 
 
 
