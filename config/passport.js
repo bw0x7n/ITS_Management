@@ -5,6 +5,9 @@ var bcrypt = require('bcryptjs');
 var dbconfig = require('./database');
 var connection = mysql.createConnection(dbconfig.connection);
 
+
+
+
 connection.query('USE ' + dbconfig.database);
 
 module.exports = function(passport) {
@@ -107,7 +110,7 @@ module.exports = function(passport) {
 
 
 
-    
+
 console.log(bool);
 
     // bcrypt.compare(password,rows[0].password, (err, succ) => {
