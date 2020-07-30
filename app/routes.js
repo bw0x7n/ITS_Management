@@ -67,13 +67,22 @@ module.exports = function(app, passport) {
  
  
  app.get("/acceuill" , function(req, res){
-connection.query('select * from def  ' , function(err , rs){	 
+   var id_user = req.user.id;
+// console.log(JSON.parse(JSON.stringify(req.user));)
+
+console.log("user data : ");
+console.log(req.user) ; 
+
+
+
+connection.query('select * from def where id_user = ?  ' ,id_user , function(err , rs){	 
     var articles = JSON.parse(JSON.stringify(rs)); 
-   console.log(articles);
+
+  //  console.log(articles);
+
     res.render("acceuill.ejs", {articles: articles , user:req.user})
 
 });
-
     
 });
  
