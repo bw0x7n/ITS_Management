@@ -70,10 +70,8 @@ module.exports = function(app, passport) {
    var id_user = req.user.id;
 // console.log(JSON.parse(JSON.stringify(req.user));)
 
-console.log("user data : ");
-console.log(req.user) ; 
-
-
+// console.log("user data : ");
+// console.log(req.user) ;  @svdwi just check for user data (id) 
 
 connection.query('select * from def where id_user = ?  ' ,id_user , function(err , rs){	 
     var articles = JSON.parse(JSON.stringify(rs)); 
