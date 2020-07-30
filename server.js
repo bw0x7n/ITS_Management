@@ -4,7 +4,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
 var app = express();
-var port = process.env.PORT || 8000;
+var port = process.env.PORT || 8080;
 const path = require('path');
 
 app.use(express.static(path.join(__dirname, '/')));

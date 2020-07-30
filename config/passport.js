@@ -26,6 +26,9 @@ module.exports = function(passport) {
    passwordField: 'password',
    passReqToCallback: true
   },
+
+
+
   function(req, username, password, done){
    connection.query("SELECT * FROM users WHERE username = ? ", 
    [username], function(err, rows){
@@ -34,9 +37,32 @@ module.exports = function(passport) {
     if(rows.length){
      return done(null, false, req.flash('signupMessage', 'That is already taken'));
     }else{
+
+    //   bcrypt.genSalt(10, function(err, salt) {
+    //     bcrypt.hash(password, salt, function(err, hash) {
+    //        const   password = hash ; 
+    //     });
+    // });
+
+
+    async function crypting() {
+       try {
+      const salt = await bcrypt.genSalt(10);
+      const hash = await bcrypt.hash(password, salt);
+    } catch (e) {
+      console.log(e)
+    } }
+
+
+
+    const salt = bcrypt.genSaltSync(10);
+    const hash = bcrypt.hashSync(password, salt);
+
+      console.log(password) ; 
+ 
      var newUserMysql = {
       username: username,
-      password: bcrypt.hashSync(password, null, null)
+      password: hash
      };
 
      var insertQuery = "INSERT INTO users (username, password) values (?, ?)";
@@ -59,16 +85,47 @@ module.exports = function(passport) {
    passwordField: 'password',
    passReqToCallback: true
   },
+
+   
   function(req, username, password, done){
    connection.query("SELECT * FROM users WHERE username = ? ", [username],
    function(err, rows){
+    console.log(username);
+    console.log(password) ;
     if(err)
      return done(err);
+
+     console.log(rows.length) ;
+
     if(!rows.length){
      return done(null, false, req.flash('loginMessage', 'No User Found'));
     }
-    if(!bcrypt.compareSync(password, rows[0].password))
-     return done(null, false, req.flash('loginMessage', 'Wrong Password'));
+
+    bcrypt.compare(password,rows[0].password, (err, succ) => {
+    console.log(succ); 
+      // if (!succ) { 
+      //   return done(null,false,  rows[0]);
+      
+      // }
+    } ) ; 
+          
+          console.log(rows[0].password);
+
+
+
+
+
+  //   bcrypt.compare(password, rows[0].password, function(err, result) {
+  //     console.log(result);
+  //     if(!result){
+  //       // return done(null, false, req.flash('loginMessage', 'Wrong Password'));
+  //     }
+  //  });
+
+//       var result  = bcrypt.compareSync(password, rows[0].password) ; 
+// console.log(result);
+//         if(!result)
+//           return done(null, false, req.flash('loginMessage', 'Wrong Password'));
 
     return done(null, rows[0]);
    });
