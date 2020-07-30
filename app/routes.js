@@ -78,6 +78,25 @@ connection.query('select * from def  ' , function(err , rs){
 });
  
  
+
+
+ 
+
+app.post('/delete/:id', function(req, res){
+ 
+   connection.query('DELETE FROM def WHERE id_user='+req.params.id, function(err, results){
+    if(err) throw err;
+  });
+res.redirect('/acceuill')
+
+  });
+
+
+
+
+
+
+ 
  app.get('/setting', isLoggedIn, function(req, res){
   res.render('setting.ejs', {
    user:req.user
@@ -91,8 +110,10 @@ var username =req.body.username ;
 var password = bcrypt.hashSync(req.body.password, null, null) ; 
 var id = req.user.id ; 
 connection.query('UPDATE users SET ? WHERE id = ?', [{ username: username , password : password }, id], function (err, result) {
-    if (err) throw err;
+  res.redirect('/acceuill');  
+  if (err) throw err;
     console.log(result.affectedRows + " record(s) updated ");
+    
   });
 
 });

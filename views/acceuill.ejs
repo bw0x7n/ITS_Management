@@ -577,7 +577,8 @@
             <!--work collections start-->
             <div id="work-collections">
               <div class="row">
-                <div class="col s12 m12">
+
+                 <div class="col s12 m12">
                   <ul id="projects-collection" class="collection z-depth-1">
                     <li class="collection-item avatar">
                       <i class="material-icons cyan circle">list
@@ -612,9 +613,13 @@
                            <a class="btn-floating waves-effect waves-light blue lightrn-1">
                              <i class="material-icons">mode_edit</i>
                            </a>
-                           <a    class="btn-floating waves-effect waves-light pink lightrn-1"   href="/delete/<%= articles[i].id_user %>" >
+
+                            <form action="/delete/<%= articles[i].id_user %>" method="post">
+
+                            <button     class="btn-floating waves-effect waves-light pink lightrn-1"   href="/delete/<%= articles[i].id_user %>" >
                              <i class="material-icons">delete</i>
-                           </a>
+                            </button>
+                          </form>
                          </div>
                        </div>
                      </li>
@@ -623,7 +628,7 @@
                    
                   </ul>
                 </div>
-                
+         
               </div>
             </div>
             <!--work collections end-->
