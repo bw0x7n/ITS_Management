@@ -102,6 +102,12 @@ module.exports = function(passport) {
 
     var bool = bcrypt.compareSync(password, rows[0].password); // true
 
+
+
+
+
+
+    
 console.log(bool);
 
     // bcrypt.compare(password,rows[0].password, (err, succ) => {
