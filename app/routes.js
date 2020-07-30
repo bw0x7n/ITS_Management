@@ -19,7 +19,7 @@ module.exports = function(app, passport) {
  
  
  app.get('/indexx', function(req, res){
-  res.render('indexx.ejs');
+  res.render('indexx.ejs', {message:req.flash('loginMessage')});
  });
 
  app.post('/login', passport.authenticate('local-login', {
