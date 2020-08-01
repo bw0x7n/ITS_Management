@@ -20,6 +20,13 @@ module.exports = function(app, passport) {
  
  app.get('/indexx', function(req, res){
   res.render('indexx.ejs', {message:req.flash('loginMessage')});
+ }); 
+ 
+ 
+ 
+ app.get('/contact', function(req, res){
+  res.render('contact.ejs', { user: req.user });
+
  });
 
  app.post('/login', passport.authenticate('local-login', {
@@ -105,11 +112,8 @@ res.redirect('/acceuill')
 
  
  app.get('/setting', isLoggedIn, function(req, res){
-  res.render('setting.ejs', {
-   user:req.user
-   
-  });
-  
+  res.render('setting.ejs', {user:req.user});
+});
   
   
 app.post('/setting', function(req, res) {
@@ -141,9 +145,6 @@ connection.query('UPDATE users SET ? WHERE id = ?', [{ username: username , pass
   // });
 // });
   
-  
- });
- 
  
 //definir
  app.get('/definir', function(req, res){

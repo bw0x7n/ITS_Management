@@ -1,33 +1,7 @@
 <html lang="en">
-<!--================================================================================
-Item Name: Materialize - Material Design Admin Template
-Version: 4.0
-Author: PIXINVENT
-Author URL: https://themeforest.net/user/pixinvent/portfolio
-================================================================================ -->
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="msapplication-tap-highlight" content="no">
-<meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
-<meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-<title>Materialize - Material Design Admin Template</title>
-<!-- Favicons-->
-<link rel="icon" href="static/images/favicon/favicon-32x32.png" sizes="32x32">
-<!-- Favicons-->
-<link rel="apple-touch-icon-precomposed" href="../images/favicon/apple-touch-icon-152x152.png">
-<!-- For iPhone -->
-<meta name="msapplication-TileColor" content="#00bcd4">
-<meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
-<!-- For Windows Phone -->
-<!-- CORE CSS-->
-<link href="../css//materialize.css" type="text/css" rel="stylesheet">
-<link href="../css//style.css" type="text/css" rel="stylesheet">
-<!-- Custome CSS-->
-<link href="../css/custom/custom.css" type="text/css" rel="stylesheet">
-<!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
-<link href="../vendors/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet">
+
+<% include includes/head.ejs %>
+
 <body class="loaded"  >
 <!-- Start Page Loading -->
 <div id="loader-wrapper">
@@ -36,521 +10,351 @@ Author URL: https://themeforest.net/user/pixinvent/portfolio
 <div class="loader-section section-right"></div>
 </div>
 <!-- End Page Loading -->
+
 <!-- //////////////////////////////////////////////////////////////////////////// -->
 <!-- START HEADER -->
 <header id="header" class="page-topbar">
 <!-- start header nav-->
 <div class="navbar-fixed">
-  <nav class="navbar-color gradient-45deg-indigo-blue
+<nav class="navbar-color gradient-45deg-indigo-blue
 ">
-    <div class="nav-wrapper">
-      <ul class="left">
-        <li>
-          <h1 class="logo-wrapper">
-            <a href="index.html" class="brand-logo darken-1">
-              <img src="images/logo/materialize-logo.png" alt="materialize logo">
-                <span class="logo-text hide-on-med-and-down">ITS management</span>
-              </a>
-            </h1>
-          </li>
-        </ul>
-        <div class="header-search-wrapper hide-on-med-and-down"></div>
-        <!-- translation-button -->
-        <!-- notifications-dropdown -->
-        <!-- profile-dropdown -->
-      </div>
-    </nav>
-  </div>
-  <!-- end header nav-->
+<div class="nav-wrapper">
+<ul class="left">
+<li>
+<h1 class="logo-wrapper">
+<a href="index.html" class="brand-logo darken-1">
+  <img src="images/logo/materialize-logo.png" alt="materialize logo">
+    <span class="logo-text hide-on-med-and-down">ITS management</span>
+  </a>
+</h1>
+</li>
+</ul>
+<div class="header-search-wrapper hide-on-med-and-down"></div>
+<!-- translation-button -->
+<!-- notifications-dropdown -->
+<!-- profile-dropdown -->
+</div>
+</nav>
+</div>
+<!-- end header nav-->
 </header>
 <!-- END HEADER -->
 <!-- //////////////////////////////////////////////////////////////////////////// -->
 <!-- START MAIN -->
 <div id="main">
-  <!-- START WRAPPER -->
-  <div class="wrapper">
-    <!-- START LEFT SIDEBAR NAV-->
-    <aside id="left-sidebar-nav">
-      <ul id="slide-out" class="side-nav fixed leftside-navigation ps-container ps-active-y" style="transform: translateX(-100%);">
-        <li class="user-details cyan darken-2">
-          <div class="row">
-            <div class="col col s4 m4 l4">
-              <img src="images/avatar/avatar-7.png" alt="" class="circle responsive-img valign profile-image cyan">
+<!-- START WRAPPER -->
+<div class="wrapper">
+<!-- START LEFT SIDEBAR NAV-->
+
+
+<%  include includes/navbar.ejs %>
+
+
+
+<!-- END LEFT SIDEBAR NAV-->
+
+
+
+
+<!-- START CONTENT -->
+<section id="content">
+<!--start container-->
+<div class="container">
+<!--card stats start-->
+<div id="card-stats">
+<div class="row mt-1">
+  <div class="col s12 s6 l3">
+    <div class="card gradient-45deg-indigo-blue
+gradient-shadow">
+      <div class="card-content white-text">
+        <i class="material-icons background-round mt-5">fingerprint
+
+</i>
+        <br>
+          <br>
+            <span class="card-title">DEFINIR ET ETABLIR</span>
+            <p></p>
+          </div>
+          <div class="card-action">
+            <p class="center-align">
+              <button   href="#!"    onclick="tab1();" class="waves-effect waves-light btn blue"   >DEFINIR ET ETABLIR</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 s6 l3">
+        <div class="card gradient-45deg-indigo-purple gradient-shadow">
+          <div class="card-content white-text">
+            <i class="material-icons background-round mt-5">build</i>
+            <br>
+              <br>
+                <span class="card-title">METTRE EN OEUVRE&amp;OPERER</span>
+                <p></p>
               </div>
-              <div class="col col s8 m8 l8">
-                <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown-nav"><%= user.username %>
-                  <i class="mdi-navigation-arrow-drop-down right"></i>
-                </a>
-                <ul id="profile-dropdown-nav" class="dropdown-content" style="white-space: nowrap; position: absolute; top: 57px; left: 100.484px; opacity: 1; display: none;">
-                  <li>
-                    <a href="#" class="grey-text text-darken-1">
-                      <i class="material-icons">face</i> Profile
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/setting" class="grey-text text-darken-1">
-                      <i class="material-icons">settings</i> Settings
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="grey-text text-darken-1">
-                      <i class="material-icons">live_help</i> Help
-                    </a>
-                  </li>
-                  <li class="divider"></li>
-                  <li>
-                    <a href="#" class="grey-text text-darken-1">
-                      <i class="material-icons">lock_outline</i> Lock
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="grey-text text-darken-1">
-                      <i class="material-icons">keyboard_tab</i> Logout
-                    </a>
-                  </li>
-                </ul>
-                <p class="user-roal">Administrator</p>
+              <div class="card-action">
+                <p class="center-align">
+                  <button href="#!"   onclick="tab2();" class="waves-effect waves-light btn gradient-45deg-indigo-purple">METTRE EN OEUVRE&amp;OPERER </button>
+                </p>
               </div>
             </div>
-          </li>
-          <li class="no-padding">
-            <ul class="collapsible" data-collapsible="accordion">
-              <li class="bold">
-                <a href="acceuill" class="waves-effect waves-cyan">
-                  <i class="material-icons">dashboard</i>
-                  <span class="nav-text">Accuell</span>
-                </a>
-              </li>
-              <li class="bold">
-                <a href="/profile" class="waves-effect waves-cyan">
-                  <i class="material-icons">account_box</i>
-                  <span class="nav-text">Profile</span>
-                </a>
-              </li>
-              <li class="bold">
-                <a href="/setting" class="waves-effect waves-cyan">
-                  <i class="material-icons">settings</i>
-                  <span class="nav-text">Settings</span>
-                </a>
-              </li>
-              <li class="bold">
-                <a href="/contact" class="waves-effect waves-cyan">
-                  <i class="material-icons">contacts
-
-</i>
-                  <span class="nav-text">contacts
-
-</span>
-                </a>
-              </li>
-              <li class="bold">
-                <a href="/logout" class="waves-effect waves-cyan">
-                  <i class="material-icons">remove_circle
-
-
-</i>
-                  <span class="nav-text">logout
-
-</span>
-                </a>
-              </li>
-              <li class="bold"></li>
-              <li class="bold"></li>
-              <li class="bold"></li>
-              <li class="bold"></li>
-              <li></li>
-            </ul>
-          </li>
-          <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-            <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
           </div>
-          <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 575px;">
-            <div class="ps-scrollbar-y" style="top: 0px; height: 520px;"></div>
-          </div>
-          <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-            <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-          </div>
-          <div class="ps-scrollbar-y-rail" style="top: 0px; height: 575px; right: 3px;">
-            <div class="ps-scrollbar-y" style="top: 0px; height: 520px;"></div>
-          </div>
-          <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-            <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-          </div>
-          <div class="ps-scrollbar-y-rail" style="top: 0px; height: 575px; right: 3px;">
-            <div class="ps-scrollbar-y" style="top: 0px; height: 520px;"></div>
-          </div>
-          <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-            <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-          </div>
-          <div class="ps-scrollbar-y-rail" style="top: 0px; height: 575px; right: 3px;">
-            <div class="ps-scrollbar-y" style="top: 0px; height: 520px;"></div>
-          </div>
-          <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-            <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-          </div>
-          <div class="ps-scrollbar-y-rail" style="top: 0px; height: 575px; right: 3px;">
-            <div class="ps-scrollbar-y" style="top: 0px; height: 520px;"></div>
-          </div>
-          <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-            <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-          </div>
-          <div class="ps-scrollbar-y-rail" style="top: 0px; height: 575px; right: 3px;">
-            <div class="ps-scrollbar-y" style="top: 0px; height: 520px;"></div>
-          </div>
-          <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-            <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-          </div>
-          <div class="ps-scrollbar-y-rail" style="top: 0px; height: 575px; right: 3px;">
-            <div class="ps-scrollbar-y" style="top: 0px; height: 520px;"></div>
-          </div>
-          <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-            <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-          </div>
-          <div class="ps-scrollbar-y-rail" style="top: 0px; height: 575px; right: 3px;">
-            <div class="ps-scrollbar-y" style="top: 0px; height: 520px;"></div>
-          </div>
-          <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-            <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-          </div>
-          <div class="ps-scrollbar-y-rail" style="top: 0px; height: 575px; right: 3px;">
-            <div class="ps-scrollbar-y" style="top: 0px; height: 520px;"></div>
-          </div>
-          <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-            <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-          </div>
-          <div class="ps-scrollbar-y-rail" style="top: 0px; height: 575px; right: 3px;">
-            <div class="ps-scrollbar-y" style="top: 0px; height: 520px;"></div>
-          </div>
-          <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-            <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-          </div>
-          <div class="ps-scrollbar-y-rail" style="top: 0px; height: 575px; right: 3px;">
-            <div class="ps-scrollbar-y" style="top: 0px; height: 520px;"></div>
-          </div>
-          <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-            <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-          </div>
-          <div class="ps-scrollbar-y-rail" style="top: 0px; height: 575px; right: 3px;">
-            <div class="ps-scrollbar-y" style="top: 0px; height: 520px;"></div>
-          </div>
-          <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-            <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-          </div>
-          <div class="ps-scrollbar-y-rail" style="top: 0px; height: 575px; right: 3px;">
-            <div class="ps-scrollbar-y" style="top: 0px; height: 520px;"></div>
-          </div>
-          <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-            <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-          </div>
-          <div class="ps-scrollbar-y-rail" style="top: 0px; height: 575px; right: 3px;">
-            <div class="ps-scrollbar-y" style="top: 0px; height: 520px;"></div>
-          </div>
-        </ul>
-        <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only">
-          <i class="material-icons">menu</i>
-        </a>
-      </aside>
-      <!-- END LEFT SIDEBAR NAV-->
-      <!-- //////////////////////////////////////////////////////////////////////////// -->
-      <!-- START CONTENT -->
-      <section id="content">
-        <!--start container-->
-        <div class="container">
-          <!--card stats start-->
-          <div id="card-stats">
-            <div class="row mt-1">
+          <div class="col s12 s6 l3">
+            <div class="card gradient-45deg-deep-purple-blue
+gradient-shadow">
+              <div class="card-content white-text">
+                <i class="material-icons background-round mt-5">videocam</i>
+                <br>
+                  <br>
+                    <span class="card-title">SURVEILLER ET REVOIR</span>
+                    <p></p>
+                  </div>
+                  <div class="card-action">
+                    <p class="center-align">
+                      <button href="#!"   onclick="tab3();"class="waves-effect waves-light btn gradient-45deg-deep-purple-blue">SURVEILLER ET REVOIR</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div class="col s12 s6 l3">
-                <div class="card gradient-45deg-indigo-blue
+                <div class="card gradient-45deg-amber-amber
+
 gradient-shadow">
                   <div class="card-content white-text">
-                    <i class="material-icons background-round mt-5">fingerprint
-
-</i>
+                    <i class="material-icons background-round mt-5">settings</i>
                     <br>
                       <br>
-                        <span class="card-title">DEFINIR ET ETABLIR</span>
+                        <span class="card-title">maintenir et améliorer </span>
                         <p></p>
                       </div>
                       <div class="card-action">
                         <p class="center-align">
-                          <button   href="#!"    onclick="tab1();" class="waves-effect waves-light btn blue"   >DEFINIR ET ETABLIR</button>
+                          <button href="#!"   onclick="tab4();" class="waves-effect waves-light btn gradient-45deg-amber-amber
+">maintenir et améliorer </button>
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div class="col s12 s6 l3">
-                    <div class="card gradient-45deg-indigo-purple gradient-shadow">
-                      <div class="card-content white-text">
-                        <i class="material-icons background-round mt-5">build</i>
-                        <br>
-                          <br>
-                            <span class="card-title">METTRE EN OEUVRE&amp;OPERER</span>
-                            <p></p>
+                </div>
+                <!-- ----------------- TAB1  -------------------------------- -->
+
+
+
+
+                <div    class="card-panel z-depth-5" style="display: none;"  id="tab1"class="row">
+                  <form  action="/Definir" method="POST" class="col s12">
+                    <h4>Definir Et Etablir Form :  </h4>
+                    <div class="row">
+
+
+
+
+
+                        <div class="input-field col s6">
+                          <input id="intier" type="text" class="validate">
+                            <label for="intier">intier le smsi                      </label>
                           </div>
-                          <div class="card-action">
-                            <p class="center-align">
-                              <button href="#!"   onclick="tab2();" class="waves-effect waves-light btn gradient-45deg-indigo-purple">METTRE EN OEUVRE&amp;OPERER </button>
-                            </p>
+
+                        <div class="input-field col s6">
+                          <input id="compr" type="text" class="validate">
+                            <label for="compr">comprehension de lorganisation                       </label>
                           </div>
                         </div>
-                      </div>
-                      <div class="col s12 s6 l3">
-                        <div class="card gradient-45deg-deep-purple-blue
-gradient-shadow">
-                          <div class="card-content white-text">
-                            <i class="material-icons background-round mt-5">videocam</i>
-                            <br>
-                              <br>
-                                <span class="card-title">SURVEILLER ET REVOIR</span>
-                                <p></p>
-                              </div>
-                              <div class="card-action">
-                                <p class="center-align">
-                                  <button href="#!"   onclick="tab3();"class="waves-effect waves-light btn gradient-45deg-deep-purple-blue">SURVEILLER ET REVOIR</button>
-                                </p>
-                              </div>
+                        <div class="row">
+                          <div class="input-field col s12">
+                            <input  id="analyse" type="text" class="validate">
+                              <label for="analyse">analyse le systeme existant</label>
                             </div>
                           </div>
-                          <div class="col s12 s6 l3">
-                            <div class="card gradient-45deg-amber-amber
-
-gradient-shadow">
-                              <div class="card-content white-text">
-                                <i class="material-icons background-round mt-5">settings</i>
-                                <br>
-                                  <br>
-                                    <span class="card-title">maintenir et améliorer </span>
-                                    <p></p>
-                                  </div>
-                                  <div class="card-action">
-                                    <p class="center-align">
-                                      <button href="#!"   onclick="tab4();" class="waves-effect waves-light btn gradient-45deg-amber-amber
-">maintenir et améliorer </button>
-                                    </p>
-                                  </div>
-                                </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input id="leadership" type="text" class="validate">
+                                <label for="leadership">leadership et approbation du project</label>
                               </div>
                             </div>
-                            <!-- ----------------- TAB1  -------------------------------- -->
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <input id="domaine" type="text" class="validate">
+                                  <label for="domaine">domaine d'application</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col s12"> 
 
- 
-
-
-                            <div    class="card-panel z-depth-5" style="display: none;"  id="tab1"class="row">
-                              <form  action="/Definir" method="POST" class="col s12">
-                                <h4>Definir Et Etablir Form :  </h4>
+                                  <div class="input-field col s12">
+                                    <input id="politque" type="text" class="validate">
+                                      <label for="politque">politique de securite:</label>
+                                    </div>
+                                  </div>
+                                </div>
                                 <div class="row">
+                                  <div class="col s12">
 
 
-
-
-
-                                    <div class="input-field col s6">
-                                      <input id="intier" type="text" class="validate">
-                                        <label for="intier">intier le smsi                      </label>
+                                    <div class="input-field col s12">
+                                      <input id="management" type="text" class="validate">
+                                        <label for="management">management ou risque:</label>
                                       </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col s12">
 
-                                    <div class="input-field col s6">
-                                      <input id="compr" type="text" class="validate">
-                                        <label for="compr">comprehension de lorganisation                       </label>
+
+                                      <div class="input-field col s12">
+                                        <input id="structure" type="text" class="validate">
+                                          <label for="structure">structure organistationelle :</label>
+                                        </div>
                                       </div>
                                     </div>
                                     <div class="row">
-                                      <div class="input-field col s12">
-                                        <input  id="analyse" type="text" class="validate">
-                                          <label for="analyse">analyse le systeme existant</label>
+                                      <div class="col s12">
+
+
+                                        <div class="input-field col s12 ">
+                                          <label for="declaration">declaration d'application :</label>
+
+                                          <input id="declaration" type="text" class="validate">
+                                          </div>
+
+                                          <div class="input-field col s12">
+                                            <button class="btn waves-effect waves-light gradient-45deg-indigo-blue left" type="submit" name="action"> Save
+                                              <i class="material-icons right">send</i>
+                                            </button>
+                                          </div>
+
                                         </div>
                                       </div>
+                                    
+                                    </form>
+                                  </div>
+                                  <!-- ----------------- END TAB1 -------------------------------- -->
+                                  <!-- ----------------- TAB2 -------------------------------- -->
+                                  <div    class="card-panel z-depth-5"   style="display: none;"  id="tab2"class="row">
+                                    <form  action="/mettre " method="POST"  class="col s12">
+                                      <h4>Mettre En Oeuvre et Operer Form :   </h4>
                                       <div class="row">
-                                        <div class="input-field col s12">
-                                          <input id="leadership" type="text" class="validate">
-                                            <label for="leadership">leadership et approbation du project</label>
+                                        <div class="input-field col s6">
+                                          <input id="conception" type="text" class="validate">
+                                            <label for="conception"> conception des mesures et des procedure</label>
                                           </div>
-                                        </div>
-                                        <div class="row">
-                                          <div class="input-field col s12">
-                                            <input id="domaine" type="text" class="validate">
-                                              <label for="domaine">domaine d'application</label>
+                                          <div class="input-field col s6">
+                                            <input id="mise" type="text" class="validate">
+                                              <label for="mise"> mise en oeuvre des mesures</label>
                                             </div>
                                           </div>
                                           <div class="row">
-                                            <div class="col s12"> 
-
-                                              <div class="input-field col s12">
-                                                <input id="politque" type="text" class="validate">
-                                                  <label for="politque">politique de securite:</label>
-                                                </div>
+                                            <div class="input-field col s6">
+                                              <input  id="gestion" type="text" class="validate">
+                                                <label for="gestion">gestion dela documentation</label>
                                               </div>
                                             </div>
                                             <div class="row">
-                                              <div class="col s12">
-
-
-                                                <div class="input-field col s12">
-                                                  <input id="management" type="text" class="validate">
-                                                    <label for="management">management ou risque:</label>
-                                                  </div>
+                                              <div class="input-field col s12">
+                                                <input id="communication" type="text" class="validate">
+                                                  <label for="communication">communication</label>
                                                 </div>
                                               </div>
                                               <div class="row">
-                                                <div class="col s12">
-
-
-                                                  <div class="input-field col s12">
-                                                    <input id="structure" type="text" class="validate">
-                                                      <label for="structure">structure organistationelle :</label>
-                                                    </div>
+                                                <div class="input-field col s12">
+                                                  <input id="senssibilisaton" type="text" class="validate">
+                                                    <label for="senssibilisaton">senssibilisaton et formation </label>
                                                   </div>
                                                 </div>
                                                 <div class="row">
                                                   <div class="col s12">
-
-
-                                                    <div class="input-field col s12 ">
-                                                      <label for="declaration">declaration d'application :</label>
-
-                                                      <input id="declaration" type="text" class="validate">
+                                                    <div class="input-field inline">
+                                                      <label for="operations"> gestion des operations </label>
+                                                      <input id="operations" type="text" class="validate">
                                                       </div>
-
-                                                      <div class="input-field col s12">
-                                                        <button class="btn waves-effect waves-light gradient-45deg-indigo-blue left" type="submit" name="action"> Save
-                                                          <i class="material-icons right">send</i>
-                                                        </button>
-                                                      </div>
-
                                                     </div>
+                                                    <div class="input-field col s12">
+                                                      <button class="btn waves-effect waves-light gradient-45deg-indigo-blue left" type="submit" name="action"> Save
+                                                        <i class="material-icons right">send</i>
+                                                      </button>
+                                                    </div> 
                                                   </div>
                                                 
                                                 </form>
                                               </div>
-                                              <!-- ----------------- END TAB1 -------------------------------- -->
-                                              <!-- ----------------- TAB2 -------------------------------- -->
-                                              <div    class="card-panel z-depth-5"   style="display: none;"  id="tab2"class="row">
-                                                <form  action="/mettre " method="POST"  class="col s12">
-                                                  <h4>Mettre En Oeuvre et Operer Form :   </h4>
+                                              <!-- ----------------- END TAB2 -------------------------------- -->
+                                              <!-- ----------------- TAB3 -------------------------------- -->
+                                              <div   class="card-panel z-depth-5"   style="display: none;"  id="tab3"class="row">
+                                                <form   action="/SURVEILLER " method="POST" class="col s12">
+                                                  <h4>Surveiller Et Revoir Form :  </h4>
                                                   <div class="row">
                                                     <div class="input-field col s6">
-                                                      <input id="conception" type="text" class="validate">
-                                                        <label for="conception"> conception des mesures et des procedure</label>
+                                                      <input id="suivi" type="text" class="validate">
+                                                        <label for="suivi">suivi mesure </label>
                                                       </div>
                                                       <div class="input-field col s6">
-                                                        <input id="mise" type="text" class="validate">
-                                                          <label for="mise"> mise en oeuvre des mesures</label>
+                                                        <input id="evaluation" type="text" class="validate">
+                                                          <label for="evaluation">analyse et evaluation </label>
                                                         </div>
                                                       </div>
                                                       <div class="row">
-                                                        <div class="input-field col s6">
-                                                          <input  id="gestion" type="text" class="validate">
-                                                            <label for="gestion">gestion dela documentation</label>
+                                                        <div class="input-field col s12">
+                                                          <input  id="audit" type="text" class="validate">
+                                                            <label for="audit">audit interne </label>
                                                           </div>
                                                         </div>
                                                         <div class="row">
                                                           <div class="input-field col s12">
-                                                            <input id="communication" type="text" class="validate">
-                                                              <label for="communication">communication</label>
+                                                            <input id="direction" type="text" class="validate">
+                                                              <label for="direction">revue de direction</label>
                                                             </div>
-                                                          </div>
-                                                          <div class="row">
-                                                            <div class="input-field col s12">
-                                                              <input id="senssibilisaton" type="text" class="validate">
-                                                                <label for="senssibilisaton">senssibilisaton et formation </label>
-                                                              </div>
-                                                            </div>
-                                                            <div class="row">
-                                                              <div class="col s12">
-                                                                <div class="input-field inline">
-                                                                  <label for="operations"> gestion des operations </label>
-                                                                  <input id="operations" type="text" class="validate">
-                                                                  </div>
-                                                                </div>
-                                                                <div class="input-field col s12">
-                                                                  <button class="btn waves-effect waves-light gradient-45deg-indigo-blue left" type="submit" name="action"> Save
-                                                                    <i class="material-icons right">send</i>
-                                                                  </button>
-                                                                </div> 
-                                                              </div>
-                                                           
-                                                            </form>
-                                                          </div>
-                                                          <!-- ----------------- END TAB2 -------------------------------- -->
-                                                          <!-- ----------------- TAB3 -------------------------------- -->
-                                                          <div   class="card-panel z-depth-5"   style="display: none;"  id="tab3"class="row">
-                                                            <form   action="/SURVEILLER " method="POST" class="col s12">
-                                                              <h4>Surveiller Et Revoir Form :  </h4>
-                                                              <div class="row">
-                                                                <div class="input-field col s6">
-                                                                  <input id="suivi" type="text" class="validate">
-                                                                    <label for="suivi">suivi mesure </label>
-                                                                  </div>
-                                                                  <div class="input-field col s6">
-                                                                    <input id="evaluation" type="text" class="validate">
-                                                                      <label for="evaluation">analyse et evaluation </label>
-                                                                    </div>
-                                                                  </div>
-                                                                  <div class="row">
-                                                                    <div class="input-field col s12">
-                                                                      <input  id="audit" type="text" class="validate">
-                                                                        <label for="audit">audit interne </label>
-                                                                      </div>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                      <div class="input-field col s12">
-                                                                        <input id="direction" type="text" class="validate">
-                                                                          <label for="direction">revue de direction</label>
-                                                                        </div>
 
-                                                                        <div class="input-field col s12">
-                                                                          <button class="btn waves-effect waves-light gradient-45deg-indigo-blue left" type="submit" name="action"> Save
-                                                                            <i class="material-icons right">send</i>
-                                                                          </button>
-                                                                        </div>
-                                                                      </div>
-                                                                   
-                                                                    </form>
+                                                            <div class="input-field col s12">
+                                                              <button class="btn waves-effect waves-light gradient-45deg-indigo-blue left" type="submit" name="action"> Save
+                                                                <i class="material-icons right">send</i>
+                                                              </button>
+                                                            </div>
+                                                          </div>
+                                                        
+                                                        </form>
+                                                      </div>
+                                                      <!-- ----------------- END TAB3 -------------------------------- -->
+                                                      <!-- ----------------- TAB4 DEFINIR ET ETABLIR FORM -------------------------------- -->
+                                                      <div     class="card-panel z-depth-5"  style="display: none;"  id="tab4"class="row">
+                                                        <form  action="/maintenir " method="POST"  class="col s12">
+                                                          <h4>Maintenir et Améliorer Form :   </h4>
+                                                          <div class="row">
+                                                            <div class="input-field col s6">
+                                                              <input id="maintenir" type="text" class="validate">
+                                                                <label for="maintenir">maintenir et améliorer</label>
+                                                              </div>
+                                                              <div class="input-field col s6">
+                                                                <input id="traitement" type="text" class="validate">
+                                                                  <label for="traitement">traitement des non-confomites</label>
+                                                                </div>
+                                                              </div>
+                                                              <div class="row">
+                                                                <div class="input-field col s12">
+                                                                  <input  id="Amélioration" type="text" class="validate">
+                                                                    <label for="Amélioration">Amélioration continue</label>
                                                                   </div>
-                                                                  <!-- ----------------- END TAB3 -------------------------------- -->
-                                                                  <!-- ----------------- TAB4 DEFINIR ET ETABLIR FORM -------------------------------- -->
-                                                                  <div     class="card-panel z-depth-5"  style="display: none;"  id="tab4"class="row">
-                                                                    <form  action="/maintenir " method="POST"  class="col s12">
-                                                                      <h4>Maintenir et Améliorer Form :   </h4>
-                                                                      <div class="row">
-                                                                        <div class="input-field col s6">
-                                                                          <input id="maintenir" type="text" class="validate">
-                                                                            <label for="maintenir">maintenir et améliorer</label>
-                                                                          </div>
-                                                                          <div class="input-field col s6">
-                                                                            <input id="traitement" type="text" class="validate">
-                                                                              <label for="traitement">traitement des non-confomites</label>
-                                                                            </div>
-                                                                          </div>
-                                                                          <div class="row">
-                                                                            <div class="input-field col s12">
-                                                                              <input  id="Amélioration" type="text" class="validate">
-                                                                                <label for="Amélioration">Amélioration continue</label>
-                                                                              </div>
-                                                                              <div class="input-field col s12">
-                                                                                <button class="btn waves-effect waves-light gradient-45deg-indigo-blue left" type="submit" name="action"> Save
-                                                                                  <i class="material-icons right">send</i>
-                                                                                </button>
-                                                                              </div> 
-                                                                            </div>
-                                                                           
-                                                                          </form>
-                                                                        </div>
-                                                                        <!-- ----------------- END TAB4 -------------------------------- -->
-                                                                      </div>
-                                                                      <!--card widgets start-->
-                                                                      <div id="card-widgets">
-                                                                        <div class="row">
-                                                                          <div class="col s12 m12 l4">
-                                                                            <div id="flight-card" class="card">
-                                                                              <div class="card-header deep-orange accent-2"></div>
-                                                                              <div class="card-content-bg white-text"></div>
-                                                                            </div>
-                                                                          </div>
-                                                                        </div>
-                                                                      </div>
-                                                                      <!--card widgets end-->
+                                                                  <div class="input-field col s12">
+                                                                    <button class="btn waves-effect waves-light gradient-45deg-indigo-blue left" type="submit" name="action"> Save
+                                                                      <i class="material-icons right">send</i>
+                                                                    </button>
+                                                                  </div> 
+                                                                </div>
+                                                                
+                                                              </form>
+                                                            </div>
+                                                            <!-- ----------------- END TAB4 -------------------------------- -->
+                                                          </div>
+                                                          <!--card widgets start-->
+                                                          <div id="card-widgets">
+                                                            <div class="row">
+                                                              <div class="col s12 m12 l4">
+                                                                <div id="flight-card" class="card">
+                                                                  <div class="card-header deep-orange accent-2"></div>
+                                                                  <div class="card-content-bg white-text"></div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                          <!--card widgets end-->
 
 
 
@@ -669,232 +473,225 @@ gradient-shadow">
 
 
 
-                                                                      <!-- //////////////////////////////////////////////////////////////////////////// -->
-                                                                    </div>
-                                                                    <!--end container-->
-                                                                  </section>
-                                                                  <!-- END CONTENT -->
-                                                                  <!-- START RIGHT SIDEBAR NAV-->
-                                                                  <aside id="right-sidebar-nav">
-                                                                    <ul id="chat-out" class="side-nav rightside-navigation right-aligned ps-container ps-active-y" style="transform: translateX(100%);">
-                                                                      <li class="li-hover">
-                                                                        <div class="row">
-                                                                          <div class="col s12 border-bottom-1 mt-5">
-                                                                            <ul class="tabs">
-                                                                              <li class="tab col s4">
-                                                                                <a href="#activity" class="active">
-                                                                                  <span class="material-icons">graphic_eq</span>
-                                                                                </a>
-                                                                              </li>
-                                                                              <li class="tab col s4">
-                                                                                <a href="#chatapp">
-                                                                                  <span class="material-icons">face</span>
-                                                                                </a>
-                                                                              </li>
-                                                                              <li class="tab col s4">
-                                                                                <a href="#settings">
-                                                                                  <span class="material-icons">settings</span>
-                                                                                </a>
-                                                                              </li>
-                                                                              <li class="indicator" style="right: 186px; left: 0px;"></li>
-                                                                            </ul>
+                                                          <!-- //////////////////////////////////////////////////////////////////////////// -->
+                                                        </div>
+                                                        <!--end container-->
+                                                      </section>
+                                                      <!-- END CONTENT -->
+                                                      <!-- START RIGHT SIDEBAR NAV-->
+                                                      <aside id="right-sidebar-nav">
+                                                        <ul id="chat-out" class="side-nav rightside-navigation right-aligned ps-container ps-active-y" style="transform: translateX(100%);">
+                                                          <li class="li-hover">
+                                                            <div class="row">
+                                                              <div class="col s12 border-bottom-1 mt-5">
+                                                                <ul class="tabs">
+                                                                  <li class="tab col s4">
+                                                                    <a href="#activity" class="active">
+                                                                      <span class="material-icons">graphic_eq</span>
+                                                                    </a>
+                                                                  </li>
+                                                                  <li class="tab col s4">
+                                                                    <a href="#chatapp">
+                                                                      <span class="material-icons">face</span>
+                                                                    </a>
+                                                                  </li>
+                                                                  <li class="tab col s4">
+                                                                    <a href="#settings">
+                                                                      <span class="material-icons">settings</span>
+                                                                    </a>
+                                                                  </li>
+                                                                  <li class="indicator" style="right: 186px; left: 0px;"></li>
+                                                                </ul>
+                                                              </div>
+                                                              <div id="settings" class="col s12" style="display: none;">
+                                                                <h6 class="mt-5 mb-3 ml-3">GENERAL SETTINGS</h6>
+                                                                <ul class="collection border-none">
+                                                                  <li class="collection-item border-none">
+                                                                    <div class="m-0">
+                                                                      <span class="font-weight-600">Notifications</span>
+                                                                      <div class="switch right">
+                                                                        <label>
+                                                                          <input checked="" type="checkbox">
+                                                                            <span class="lever"></span>
+                                                                          </label>
+                                                                        </div>
+                                                                      </div>
+                                                                      <p>Use checkboxes when looking for yes or no answers.</p>
+                                                                    </li>
+                                                                    <li class="collection-item border-none">
+                                                                      <div class="m-0">
+                                                                        <span class="font-weight-600">Show recent activity</span>
+                                                                        <div class="switch right">
+                                                                          <label>
+                                                                            <input checked="" type="checkbox">
+                                                                              <span class="lever"></span>
+                                                                            </label>
                                                                           </div>
-                                                                          <div id="settings" class="col s12" style="display: none;">
-                                                                            <h6 class="mt-5 mb-3 ml-3">GENERAL SETTINGS</h6>
-                                                                            <ul class="collection border-none">
-                                                                              <li class="collection-item border-none">
-                                                                                <div class="m-0">
-                                                                                  <span class="font-weight-600">Notifications</span>
-                                                                                  <div class="switch right">
-                                                                                    <label>
-                                                                                      <input checked="" type="checkbox">
-                                                                                        <span class="lever"></span>
-                                                                                      </label>
-                                                                                    </div>
-                                                                                  </div>
-                                                                                  <p>Use checkboxes when looking for yes or no answers.</p>
-                                                                                </li>
-                                                                                <li class="collection-item border-none">
-                                                                                  <div class="m-0">
-                                                                                    <span class="font-weight-600">Show recent activity</span>
-                                                                                    <div class="switch right">
-                                                                                      <label>
-                                                                                        <input checked="" type="checkbox">
-                                                                                          <span class="lever"></span>
-                                                                                        </label>
-                                                                                      </div>
-                                                                                    </div>
-                                                                                    <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
-                                                                                  </li>
-                                                                                  <li class="collection-item border-none">
-                                                                                    <div class="m-0">
-                                                                                      <span class="font-weight-600">Notifications</span>
-                                                                                      <div class="switch right">
-                                                                                        <label>
-                                                                                          <input type="checkbox">
-                                                                                            <span class="lever"></span>
-                                                                                          </label>
-                                                                                        </div>
-                                                                                      </div>
-                                                                                      <p>Use checkboxes when looking for yes or no answers.</p>
-                                                                                    </li>
-                                                                                    <li class="collection-item border-none">
-                                                                                      <div class="m-0">
-                                                                                        <span class="font-weight-600">Show recent activity</span>
-                                                                                        <div class="switch right">
-                                                                                          <label>
-                                                                                            <input type="checkbox">
-                                                                                              <span class="lever"></span>
-                                                                                            </label>
-                                                                                          </div>
-                                                                                        </div>
-                                                                                        <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
-                                                                                      </li>
-                                                                                      <li class="collection-item border-none">
-                                                                                        <div class="m-0">
-                                                                                          <span class="font-weight-600">Show your emails</span>
-                                                                                          <div class="switch right">
-                                                                                            <label>
-                                                                                              <input type="checkbox">
-                                                                                                <span class="lever"></span>
-                                                                                              </label>
-                                                                                            </div>
-                                                                                          </div>
-                                                                                          <p>Use checkboxes when looking for yes or no answers.</p>
-                                                                                        </li>
-                                                                                        <li class="collection-item border-none">
-                                                                                          <div class="m-0">
-                                                                                            <span class="font-weight-600">Show Task statistics</span>
-                                                                                            <div class="switch right">
-                                                                                              <label>
-                                                                                                <input type="checkbox">
-                                                                                                  <span class="lever"></span>
-                                                                                                </label>
-                                                                                              </div>
-                                                                                            </div>
-                                                                                            <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
-                                                                                          </li>
-                                                                                        </ul>
-                                                                                      </div>
-                                                                                    </div>
-                                                                                  </li>
-                                                                                  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                                    <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                                    <div class="ps-scrollbar-y" style="top: 0px; height: 326px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                                    <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                                    <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                                    <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                                    <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                                    <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                                    <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                                    <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                                    <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                                    <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                                    <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                                    <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                                    <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                                    <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                                    <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                                    <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                                    <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                                    <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                                    <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                                    <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                                    <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                                    <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                                    <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                                    <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                                    <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                                    <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                                  </div>
-                                                                                  <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                                    <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                                  </div>
-                                                                                </ul>
-                                                                              </aside>
-                                                                              <!-- END RIGHT SIDEBAR NAV-->
+                                                                        </div>
+                                                                        <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
+                                                                      </li>
+                                                                      <li class="collection-item border-none">
+                                                                        <div class="m-0">
+                                                                          <span class="font-weight-600">Notifications</span>
+                                                                          <div class="switch right">
+                                                                            <label>
+                                                                              <input type="checkbox">
+                                                                                <span class="lever"></span>
+                                                                              </label>
                                                                             </div>
-                                                                            <!-- END WRAPPER -->
                                                                           </div>
-                                                                          <!-- END MAIN -->
-                                                                          <!-- //////////////////////////////////////////////////////////////////////////// -->
-                                                                          <!-- START FOOTER -->
-                                                                          <footer class="page-footer gradient-45deg-indigo-blue">
-                                                                            <div class="footer-copyright">
-                                                                              <div class="container">
-                                                                                <span class="right hide-on-small-only">
-                                                                                  <a class="grey-text text-lighten-2" href="#">ITS management</a>
-                                                                                </span>
+                                                                          <p>Use checkboxes when looking for yes or no answers.</p>
+                                                                        </li>
+                                                                        <li class="collection-item border-none">
+                                                                          <div class="m-0">
+                                                                            <span class="font-weight-600">Show recent activity</span>
+                                                                            <div class="switch right">
+                                                                              <label>
+                                                                                <input type="checkbox">
+                                                                                  <span class="lever"></span>
+                                                                                </label>
                                                                               </div>
                                                                             </div>
-                                                                          </footer>
-                                                                          <!-- END FOOTER -->
-                                                                          <!-- ================================================
+                                                                            <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
+                                                                          </li>
+                                                                          <li class="collection-item border-none">
+                                                                            <div class="m-0">
+                                                                              <span class="font-weight-600">Show your emails</span>
+                                                                              <div class="switch right">
+                                                                                <label>
+                                                                                  <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                  </label>
+                                                                                </div>
+                                                                              </div>
+                                                                              <p>Use checkboxes when looking for yes or no answers.</p>
+                                                                            </li>
+                                                                            <li class="collection-item border-none">
+                                                                              <div class="m-0">
+                                                                                <span class="font-weight-600">Show Task statistics</span>
+                                                                                <div class="switch right">
+                                                                                  <label>
+                                                                                    <input type="checkbox">
+                                                                                      <span class="lever"></span>
+                                                                                    </label>
+                                                                                  </div>
+                                                                                </div>
+                                                                                <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
+                                                                              </li>
+                                                                            </ul>
+                                                                          </div>
+                                                                        </div>
+                                                                      </li>
+                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 326px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                                                                      </div>
+                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                                                                      </div>
+                                                                    </ul>
+                                                                  </aside>
+                                                                  <!-- END RIGHT SIDEBAR NAV-->
+                                                                </div>
+                                                                <!-- END WRAPPER -->
+                                                              </div>
+                                                              <!-- END MAIN -->
+                                                              <!-- //////////////////////////////////////////////////////////////////////////// -->
+                                                              <!-- START FOOTER -->
+                                                              <%  include includes/footer.ejs %>
+
+                                                              <!-- END FOOTER -->
+                                                              <!-- ================================================
 Scripts
 ================================================ -->
-                                                                          <!-- jQuery Library -->
-                                                                          <script type="text/javascript" src="vendors/jquery-3.2.1.min.js"></script>
-                                                                          <!--materialize js-->
-                                                                          <script type="text/javascript" src="js/materialize.min.js"></script>
-                                                                          <!--scrollbar-->
-                                                                          <script type="text/javascript" src="vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-                                                                          <!--plugins.js - Some Specific JS codes for Plugin Settings-->
-                                                                          <script type="text/javascript" src="js/plugins.js"></script>
-                                                                          <!--custom-script.js - Add your own theme custom JS-->
-                                                                          <script type="text/javascript" src="js/custom-script.js"></script>
-                                                                          <script>
+                                                              <!-- jQuery Library -->
+                                                              <script type="text/javascript" src="vendors/jquery-3.2.1.min.js"></script>
+                                                              <!--materialize js-->
+                                                              <script type="text/javascript" src="js/materialize.min.js"></script>
+                                                              <!--scrollbar-->
+                                                              <script type="text/javascript" src="vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+                                                              <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+                                                              <script type="text/javascript" src="js/plugins.js"></script>
+                                                              <!--custom-script.js - Add your own theme custom JS-->
+                                                              <script type="text/javascript" src="js/custom-script.js"></script>
+                                                              <script>
 function tab1() {
 var x = document.getElementById("tab1");
 if (x.style.display === "none") {
@@ -928,8 +725,8 @@ x.style.display = "none";
 }
 }
 </script>
-                                                                          <div class="hiddendiv common"></div>
-                                                                          <div class="drag-target" data-sidenav="chat-out" style="right: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
-                                                                          <div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
-                                                                        </body>
-                                                                      </html>
+                                                              <div class="hiddendiv common"></div>
+                                                              <div class="drag-target" data-sidenav="chat-out" style="right: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+                                                              <div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+                                                            </body>
+                                                          </html>
