@@ -4874,7 +4874,7 @@ small {
 .card {
   position: relative;
   margin: 0.5rem 0 1rem 0;
-  background-color: #fff;
+  background-color: #b61923d0;
   transition: box-shadow .25s;
   border-radius: 2px;
 }
