@@ -110,6 +110,45 @@ res.redirect('/acceuill')
 
 
 
+
+
+
+  app.post('/definir', function(req, res) {
+
+    var newUserMysql = {
+      username: username,
+      password: hash,
+      email : req.body.email
+      intier
+      compr
+      analyse
+
+     };
+  
+    console.log(req.body);
+    
+    
+    
+    var password = bcrypt.hashSync(req.body.password, null, null) ; 
+    var id = req.user.id ; 
+    connection.query('UPDATE users SET ? WHERE id = ?', [{ username: username , password : password, email : email , company : company }, id], function (err, result) {
+      res.redirect('/acceuill');  
+      if (err) throw err;
+        console.log(result.affectedRows + " record(s) updated ");
+        
+      });
+    
+    });
+    
+
+
+
+
+
+
+
+
+
  
  app.get('/setting', isLoggedIn, function(req, res){
   res.render('setting.ejs', {user:req.user});
