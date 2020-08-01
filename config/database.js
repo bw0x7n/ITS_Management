@@ -5,5 +5,7 @@ module.exports = {
   'password':''
  },
  'database':'nodejs_login',
- 'user_table':'users'
+ 'user_table':'users',
+ multipleStatements: true
+
 }
