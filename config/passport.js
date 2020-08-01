@@ -96,8 +96,8 @@ module.exports = function(passport) {
      console.log(rows.length) ;
 
     if(!rows.length){
-     return done(null, false, req.flash('loginMessage', 'No User Found'));
-    }
+     return done(null, false, req.flash('loginMessage', 'Error User Not Found '));
+    } 
 
 
     console.log(password) ;

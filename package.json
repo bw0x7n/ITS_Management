@@ -14,7 +14,11 @@
   "ejs": "^2.3.2",
   "express": "^4.13.0",
   "express-session": "^1.17.1",
+<<<<<<< HEAD
   "method-override": "^3.0.0",
+=======
+  "materialize-css": "^1.0.0",
+>>>>>>> f224a2de135cb1d4cbc46062a08fd7ca1a1989e4
   "morgan": "^1.6.0",
   "mysql": "^2.7.0",
   "passport": "^0.2.2",
