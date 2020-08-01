@@ -233,7 +233,7 @@
                       </div>
                       <div class="card-action">
                         <p class="center-align">
-   <button href="#!"   onclick="tab2()" class="waves-effect waves-light btn gradient-45deg-indigo-purple">METTRE EN OEUVRE&amp;OPERER </button></p>
+   <button href="#!"   onclick="tab2();" class="waves-effect waves-light btn gradient-45deg-indigo-purple">METTRE EN OEUVRE&amp;OPERER </button></p>
                       </div>
                     </div>
                   </div>
@@ -247,7 +247,7 @@
                       </div>
                       <div class="card-action">
                         <p class="center-align">
-                          <button href="#!"   onclick="tab3()"class="waves-effect waves-light btn gradient-45deg-deep-purple-blue">SURVEILLER ET REVOIR</button></p>
+                          <button href="#!"   onclick="tab3();"class="waves-effect waves-light btn gradient-45deg-deep-purple-blue">SURVEILLER ET REVOIR</button></p>
                       </div>
                     </div>
                   </div> <div class="col s12 s6 l3">
@@ -261,7 +261,7 @@
                       </div>
                       <div class="card-action">
                         <p class="center-align">
-                          <button href="#!"   onclick="tab4()" class="waves-effect waves-light btn gradient-45deg-amber-amber
+                          <button href="#!"   onclick="tab4();" class="waves-effect waves-light btn gradient-45deg-amber-amber
                     ">maintenir et améliorer </button></p>
                       </div>
                     </div>
@@ -282,7 +282,7 @@
               <div    style="display: none;"  id="tab1"class="row">
                
                 <form class="col s12">
-                  <!-- <h4>Definir Et Etablir Form :  </h4> -->
+                    <h4>Definir Et Etablir Form :  </h4>  
                   <div class="row">
                     <div class="input-field col s6">
                       <input placeholder="Placeholder" id="first_name" type="text" class="validate">
@@ -391,7 +391,7 @@
 
 <div    style="display: none;"  id="tab3"class="row">
   <form class="col s12">
-    <h4>tab3 Form :   </h4>
+    <h4>Surveiller Et Revoir Form :  </h4>
 
     <div class="row">
       <div class="input-field col s6">
@@ -447,8 +447,11 @@
 
 <div    style="display: none;"  id="tab4"class="row">
   <form class="col s12">
+    <h4>Maintenir et Améliorer Form :   </h4>
+
     <div class="row">
       <div class="input-field col s6">
+        
         <input placeholder="Placeholder" id="first_name" type="text" class="validate">
         <label for="first_name">First Name</label>
       </div>
@@ -949,45 +952,32 @@
           x.style.display = "none";
         }
       }
-
-</Script>
-
-<script>
       function tab2() {
-        var x = document.getElementById("tab1");
+        var x = document.getElementById("tab2");
         if (x.style.display === "none") {
           x.style.display = "block";
         } else {
           x.style.display = "none";
         }
       }
-
-
-      </script> <script>
       function tab3() {
-        var x = document.getElementById("tab1");
+        var x = document.getElementById("tab3");
         if (x.style.display === "none") {
           x.style.display = "block";
         } else {
           x.style.display = "none";
         }
       }
-
-      </script> <script>
-
       function tab4() {
-        var x = document.getElementById("tab1");
+        var x = document.getElementById("tab4");
         if (x.style.display === "none") {
           x.style.display = "block";
         } else {
           x.style.display = "none";
         }
       }
-
-
-
-      </script>
-
+</script>
+ 
 
 
 <div class="hiddendiv common"></div><div class="drag-target" data-sidenav="chat-out" style="right: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div><div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>

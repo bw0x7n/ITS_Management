@@ -30,8 +30,7 @@ module.exports = function(passport) {
    passReqToCallback: true
   },
 
-
-
+ 
   function(req, username, password, done){
    connection.query("SELECT * FROM users WHERE username = ? ", 
    [username], function(err, rows){
@@ -57,13 +56,14 @@ module.exports = function(passport) {
  
      var newUserMysql = {
       username: username,
-      password: hash
+      password: hash,
+      email : req.body.email
      };
 
 
-
-     console.log(newUserMysql.password);
-     var insertQuery = "INSERT INTO users (username, password) values (?, ?)";
+// var email = req.body.email ; 
+    //  console.log(newUserMysql.password);
+     var insertQuery = "INSERT INTO users (username, password) values (?, ? )";
 
      connection.query(insertQuery, [newUserMysql.username, newUserMysql.password],
       function(err, rows){
