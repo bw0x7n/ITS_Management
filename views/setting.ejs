@@ -75,10 +75,18 @@
 </div>
 <div class="row">
 <div class="input-field col s12">
-<input placeholder="john@domainname.com" id="email2" type="email">
+<input placeholder="john@domainname.com"  value="<%= user.email %> "name="email" id="email2" type="email">
 <label for="email" class="active">Email</label>
 </div>
 </div>
+
+<div class="row">
+  <div class="input-field col s12">
+  <input placeholder="company"  value="<%= user.company %> "name="company" id="company" type="text">
+  <label for="company" class="active">company Name </label>
+  </div>
+  </div>
+
 <div class="row">
 <div class="input-field col s12">
 <input placeholder="YourPassword"  name="password" id="password2" type="password">
@@ -87,7 +95,7 @@
 </div>
 <div class="row">
 <div class="input-field col s12">
-<input placeholder="YourPassword" id="password2" type="password">
+<input  name="passwordtwo"  placeholder="YourPassword" id="password2" type="password">
 <label for="password" class="active">Password</label>
 </div>
 </div>
@@ -95,7 +103,7 @@
 <div class="row">
 <div class="input-field col s12">
 <button class="btn waves-effect waves-light gradient-45deg-indigo-blue
-left" type="submit" name="action">Edit Profile
+left" type="submit"  >Edit Profile
 <i class="material-icons right">send</i>
 </button>
 </div>

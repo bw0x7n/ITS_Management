@@ -117,10 +117,20 @@ res.redirect('/acceuill')
   
   
 app.post('/setting', function(req, res) {
-var username =req.body.username ; 
+var username =req.body.username; 
+var password1 = req.body.password; 
+var password2 = req.body.passwordtwo;
+var email = req.body.email;
+var company = req.body.company;
+// // console.log(username);
+// // console.log(password1);
+console.log(req.body);
+
+
+
 var password = bcrypt.hashSync(req.body.password, null, null) ; 
 var id = req.user.id ; 
-connection.query('UPDATE users SET ? WHERE id = ?', [{ username: username , password : password }, id], function (err, result) {
+connection.query('UPDATE users SET ? WHERE id = ?', [{ username: username , password : password, email : email , company : company }, id], function (err, result) {
   res.redirect('/acceuill');  
   if (err) throw err;
     console.log(result.affectedRows + " record(s) updated ");
