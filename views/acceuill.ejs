@@ -147,7 +147,7 @@ gradient-shadow">
 
 
 
-
+                         <input hidden name="id"  value ="<%= user.id %> " type="text" class="validate">
 
                         <div class="input-field col s6">
                           <input name="intier" type="text" class="validate">
@@ -230,8 +230,11 @@ gradient-shadow">
                                   <!-- ----------------- END TAB1 -------------------------------- -->
                                   <!-- ----------------- TAB2 -------------------------------- -->
                                   <div    class="card-panel z-depth-5"   style="display: none;"  id="tab2"class="row">
-                                    <form  action="/mettre " method="POST"  class="col s12">
+                                    <form  action="/mettre" method="POST"  class="col s12">
                                       <h4>Mettre En Oeuvre et Operer Form :   </h4>
+
+                                      <input hidden name="id"  value ="<%= user.id %> " type="text" class="validate">
+
                                       <div class="row">
                                         <div class="input-field col s6">
                                           <input name="conception" type="text" class="validate">
@@ -281,6 +284,9 @@ gradient-shadow">
                                               <div   class="card-panel z-depth-5"   style="display: none;"  id="tab3"class="row">
                                                 <form   action="/SURVEILLER " method="POST" class="col s12">
                                                   <h4>Surveiller Et Revoir Form :  </h4>
+                                                  <input hidden name="id"  value ="<%= user.id %> " type="text" class="validate">
+
+                                                
                                                   <div class="row">
                                                     <div class="input-field col s6">
                                                       <input name="suivi" type="text" class="validate">
@@ -316,8 +322,15 @@ gradient-shadow">
                                                       <!-- ----------------- TAB4 DEFINIR ET ETABLIR FORM -------------------------------- -->
                                                       <div     class="card-panel z-depth-5"  style="display: none;"  id="tab4"class="row">
                                                         <form  action="/maintenir " method="POST"  class="col s12">
-                                                          <h4>Maintenir et Améliorer Form :   </h4>
-                                                          <div class="row">
+                                                       
+                                                       
+                                                       
+                                                     <h4>Maintenir et Améliorer Form :   </h4>
+                                                     <input hidden name="id"  value ="<%= user.id %> " type="text" class="validate">
+
+                                                     
+                                                     
+                                                     <div class="row">
                                                             <div class="input-field col s6">
                                                               <input name="maintenir" type="text" class="validate">
                                                                 <label for="maintenir">maintenir et améliorer</label>
@@ -370,34 +383,30 @@ gradient-shadow">
 </tr>
 </thead>
 
-<tbody>
-<% for(var i=0; i<articles.length; i++){ %>
+        <tbody>
 
-<tr>
-<td><%= articles[i].name %></td>
-<td><%= articles[i].lname %> </td>
-<td>
+        <tr>
+        <td>  </td>
+        <td>
 
-<a class="btn-floating waves-effect waves-light blue lightrn-1">
-<i class="material-icons">mode_edit</i>
-</a>
+        <a class="btn-floating waves-effect waves-light blue lightrn-1">
+        <i class="material-icons">mode_edit</i>
+        </a>
 
 
 
-</td>
+        </td>
 
-<td>
-<form action ="/delete/<%= articles[i].id_user %>" method="POST"> 
-<button   type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
-<i class="material-icons">delete</i>
-</button>
+        <td>
+        <button   type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
+        <i class="material-icons">delete</i>
+        </button>
 
-</form>
-</td>
-</tr>
+        </form>
+        </td>
+        </tr>
 
-<% } %>
-</tbody>
+        </tbody>
 
 
 </table>
