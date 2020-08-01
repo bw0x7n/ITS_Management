@@ -157,9 +157,7 @@ connection.query('UPDATE users SET ? WHERE id = ?', [{ username: username , pass
   
  
 //definir
- app.get('/definir', function(req, res){
-  res.render('definir.ejs', {message: req.flash('signupMessage')});
- });
+  
 
 
 
