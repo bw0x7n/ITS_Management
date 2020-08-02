@@ -376,8 +376,10 @@ gradient-shadow">
 <table>
 <thead>
 <tr>
-<th>Smsi Names </th>
-<th>Item Name</th>
+  <th>id</th>
+
+  <th>Services </th>
+<th>Editor Name  </th>
 <th>Edit</th>
 <th>Delete</th>
 </tr>
@@ -393,6 +395,11 @@ gradient-shadow">
         <i class="material-icons">mode_edit</i>
         </a>
 
+  <form action ="/edit/<%= definir[i].id %>" method="POST"> 
+    <a class="btn-floating waves-effect waves-light blue lightrn-1">
+    <i class="material-icons">mode_edit</i>
+    </a>
+  </form>
 
 
         </td>
