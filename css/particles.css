@@ -4,7 +4,7 @@ canvas{ display: block; vertical-align: bottom; }
  /* ---- particles.js container ---- */ 
 #particles-js{ position: fixed; width: 100%; 
     height: 100%; 
-    background-color: #b61924;
+    background-color: #rgb(84,138,255);
      background-image: url("");
       background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } 
 /* ---- stats.js ---- */ 
