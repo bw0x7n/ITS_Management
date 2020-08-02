@@ -27,7 +27,11 @@
 	<link rel="stylesheet" href="../css//particles.css">
     <link href="../vendors/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet">
     <link href="../vendors/flag-icon/css/flag-icon.min.css" type="text/css" rel="stylesheet">
-</head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+  </head>
   
      <style>
        body{
@@ -72,7 +76,9 @@ background-image: linear-gradient(19deg, #218dfd 0%, #3921ff 100%);
           <div class="col l3 m3 s12"></div>
           <div class="col l6 m6 s12">
 		  
-		  
+            <% if(message.length > 0) { %>
+          <script>  M.toast({html: '<%= message %>', classes: 'rounded'});  </script> 
+              <% } %>
 
 		  
 		  
