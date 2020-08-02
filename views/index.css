@@ -23,7 +23,7 @@ body{
       position:absolute;
       top:50%;
       left:50%;
-      background-color: #ffffffd8;
+      background-color: #ffffff00;
       width:100%;
     padding-top:1rem;
     padding-bottom:1rem;
@@ -158,7 +158,7 @@ body{
     z-index:3;
   }
   .card--welcome .card-title{
-      color:#585858;
+      color:#f3f3f3;
     }
   .card--welcome .btn-wrap{
       display:-webkit-box;
@@ -178,26 +178,26 @@ body{
       }
   .card--welcome .btn-register{
       margin-bottom:.8em;
-      background-color:#ee9ca7;
+      background-color:#ffffff3d;
     }
   .card--welcome .btn-register:hover{
-        color:#ee9ca7;
+        color:#ffffff3d;
       }
   .card--welcome .btn-login{
-      background-color:#a7bfe8;
+      background-color:#ffffff3d;
     }
   .card--register .card-title{
-      color:#ee9ca7;
+      color:#ffffff3d;
     }
   .card--register .badge{
-      background-color:#ee9ca7;
+      background-color:#f8f8f8;
     }
   .card--register .btn{
-      background-color:#ee9ca7;
+      background-color:#ffffff3d;
     }
   .card--register .btn:hover{
               background-color:#fff;
-              color:#ee9ca7 !important;
+              color:#ffffff3d !important;
               font-weight:bold;
               border:2px solid rgba(238,156,167,.25);
           }
@@ -215,13 +215,13 @@ body{
       color:#a7bfe8;
     }
   .card--login .badge{
-      background-color:#a7bfe8;
+      background-color:#ffffff3d;
     }
   .card--login .btn{
-      background-color:#a7bfe8;
+      background-color:#ffffff3d;
     }
   .card--login .btn:hover{
-              background-color:#fff;
+              background-color:#ffffff3d;
               color:#a7bfe8 !important;
               font-weight:bold;
               border:2px solid rgba(167,191,232,.25);
