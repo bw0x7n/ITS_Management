@@ -163,7 +163,11 @@ var email = req.body.email;
 var company = req.body.company;
 // // console.log(username);
 // // console.log(password1);
-console.log(req.body);
+// console.log(req.body);
+
+
+
+
 
 
 
