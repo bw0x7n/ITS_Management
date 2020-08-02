@@ -386,25 +386,26 @@ gradient-shadow">
 </thead>
 
         <tbody>
-
+          <% for(var i=0; i<definir.length; i++){ %>
         <tr>
-        <td>  </td>
-        <td>
 
-        <a class="btn-floating waves-effect waves-light blue lightrn-1">
-        <i class="material-icons">mode_edit</i>
-        </a>
+          <td>  </td>
 
-  <form action ="/edit/<%= definir[i].id %>" method="POST"> 
-    <a class="btn-floating waves-effect waves-light blue lightrn-1">
-    <i class="material-icons">mode_edit</i>
-    </a>
-  </form>
+        <td>  DEFINIR ET ETABLIR </td>
+        <td> <%= definir[i].id %>  </td>
+       
 
-
+        <td>  
+        <form action ="/edit/" method="POST"> 
+            <a class="btn-floating waves-effect waves-light blue lightrn-1">
+            <i class="material-icons">mode_edit</i>
+            </a>
+          </form>
         </td>
 
         <td>
+          <form action ="/delete/<%= definir[i].id %>" method="POST"> 
+
         <button   type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
         <i class="material-icons">delete</i>
         </button>
@@ -412,6 +413,94 @@ gradient-shadow">
         </form>
         </td>
         </tr>
+        <% } %>
+
+
+
+
+
+
+
+
+
+
+
+        <% for(var i=0; i<mettre.length; i++){ %>
+          <tr> <td>  </td>
+          <td> METTRE EN OEUVRE&OPERER           </td>
+          <td> <%= mettre[i].id %>  </td>
+   
+          <td>  
+          <form action ="/edit/" method="POST"> 
+              <a class="btn-floating waves-effect waves-light blue lightrn-1">
+              <i class="material-icons">mode_edit</i>
+              </a>
+            </form>
+          </td>
+  
+          <td>
+            <form action ="/delete/<%= mettre[i].id %>" method="POST"> 
+  
+          <button   type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
+          <i class="material-icons">delete</i>
+          </button>
+  
+          </form>
+          </td>
+          </tr>
+          <% } %>
+
+          <% for(var i=0; i<surveiller.length; i++){ %>
+            <tr> <td>  </td>
+            <td> SURVEILLER ET REVOIR            </td>
+            <td> <%= surveiller[i].id %>  </td>
+     
+            <td>  
+            <form action ="/edit/" method="POST"> 
+                <a class="btn-floating waves-effect waves-light blue lightrn-1">
+                <i class="material-icons">mode_edit</i>
+                </a>
+              </form>
+            </td>
+    
+            <td>
+              <form action ="/delete/<%= surveiller[i].id %>" method="POST"> 
+    
+            <button   type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
+            <i class="material-icons">delete</i>
+            </button>
+    
+            </form>
+            </td>
+            </tr>
+            <% } %>
+
+
+            <% for(var i=0; i<maintenir.length; i++){ %>
+              <tr> <td>  </td>
+              <td> Maintenir Et AMELIORER     </td>
+              <td> <%= maintenir[i].id %>  </td>
+       
+              <td>  
+              <form action ="/edit/" method="POST"> 
+                  <a class="btn-floating waves-effect waves-light blue lightrn-1">
+                  <i class="material-icons">mode_edit</i>
+                  </a>
+                </form>
+              </td>
+      
+              <td>
+                <form action ="/delete/<%= maintenir[i].id %>" method="POST"> 
+      
+              <button   type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
+              <i class="material-icons">delete</i>
+              </button>
+      
+              </form>
+              </td>
+              </tr>
+              <% } %>
+
 
         </tbody>
 
