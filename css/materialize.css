@@ -3591,7 +3591,7 @@ nav ul a span.badge {
 }
 
 .row .col {
-  float: left;
+  float: right;
   box-sizing: border-box;
   padding: 0 0.75rem;
   min-height: 1px;
@@ -3680,9 +3680,11 @@ nav ul a span.badge {
 
 .row .col.s12 {
   width: 100%;
+  
   margin-left: auto;
   left: auto;
   right: auto;
+ 
 }
 
 .row .col.offset-s1 {
@@ -3833,7 +3835,7 @@ nav ul a span.badge {
   .row .col.m1 {
     width: 8.3333333333%;
     margin-left: auto;
-    left: auto;
+    left: auto; 
     right: auto;
   }
   .row .col.m2 {
@@ -3898,7 +3900,9 @@ nav ul a span.badge {
   }
   .row .col.m12 {
     width: 100%;
+    
     margin-left: auto;
+    
     left: auto;
     right: auto;
   }
@@ -4868,13 +4872,13 @@ small {
   padding: 24px;
   margin: 0.5rem 0 1rem 0;
   border-radius: 2px;
-  background-color: #b61923d0;
+  background-color: #ffffffd8;
 }
 
 .card {
   position: relative;
   margin: 0.5rem 0 1rem 0;
-  background-color: #b61923d0;
+  background-color: rgba(253, 249, 249, 0.884);
   transition: box-shadow .25s;
   border-radius: 2px;
 }
