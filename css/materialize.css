@@ -3591,7 +3591,7 @@ nav ul a span.badge {
 }
 
 .row .col {
-  float: right;
+  float: left;
   box-sizing: border-box;
   padding: 0 0.75rem;
   min-height: 1px;
