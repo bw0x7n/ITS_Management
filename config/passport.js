@@ -62,14 +62,15 @@ module.exports = function(passport) {
      };
 
 
-// var email = req.body.email ; 
+
     //  console.log(newUserMysql.password);
-     var insertQuery = "INSERT INTO users (username, password) values (?, ? )";
+     var insertQuery = "INSERT INTO users (username, email ,password) values (?, ? , ? )";
 
-     connection.query(insertQuery, [newUserMysql.username, newUserMysql.password],
+     connection.query(insertQuery, [newUserMysql.username, newUserMysql.email,newUserMysql.password],
       function(err, rows){
+        console.log(err);
        newUserMysql.id = rows.insertId;
-
+       console.log(err);
        return done(null, newUserMysql);
       });
     }
@@ -99,18 +100,12 @@ module.exports = function(passport) {
     if(!rows.length){
      return done(null, false, req.flash('loginMessage', 'Error User Not Found '));
     } 
-
+    
 
     console.log(password) ;
     console.log(rows[0].password);
 
     var bool = bcrypt.compareSync(password, rows[0].password); // true
-
-
-
-
-
-
 
 console.log(bool);
 

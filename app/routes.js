@@ -28,19 +28,20 @@ module.exports = function(app, passport) {
   res.render('contact.ejs', { user: req.user });
 
  });
-
+// login route 
  app.post('/login', passport.authenticate('local-login', {
   successRedirect: '/profile',
   failureRedirect: '/login',
   failureFlash: true
- }),
+  }),
+
   function(req, res){
-   if(req.body.remember){
-    req.session.cookie.maxAge = 1000 * 60 * 3;
-   }else{
-    req.session.cookie.expires = false;
-   }
-   res.redirect('/');
+  if(req.body.remember){
+     req.session.cookie.maxAge = 1000 * 60 * 3;
+    }else{
+     req.session.cookie.expires = false;
+    }
+    res.redirect('/');
   });
 
  app.get('/signup', function(req, res){
@@ -204,8 +205,7 @@ connection.query('UPDATE users SET ? WHERE id = ?', [{ username: username , pass
 
 
 
- 
- 
+
  app.post('/signup', passport.authenticate('local-signup', {
   successRedirect: '/profile',
   failureRedirect: '/signup',
