@@ -1,0 +1,89 @@
+<div          id="tab1"class="row">
+        <form  action="/update_def"  method="POST" class="col s12">
+          <h4>Definir Et Etablir Form :  </h4>
+          <div class="row">
+
+
+
+            <input hidden name="id_user"  value ="<%= user.id %> " type="text" class="validate">
+            <input hidden name="id"  value ="<%=  id  %> " type="text" class="validate">
+
+              <div class="input-field col s6">
+                <input name="intier"  value="<%= def_edit[0].intier %> " type="text" class="validate">
+                  <label for="intier">intier le smsi                      </label>
+                </div>
+
+              <div class="input-field col s6">
+                <input name="compr" value="<%= def_edit[0].compr %> " type="text" class="validate">
+                  <label for="compr">comprehension de lorganisation                       </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input  name="analyse"  value="<%= def_edit[0].analyse %> "  type="text" class="validate">
+                    <label for="analyse">analyse le systeme existant</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input name="leadership"   value="<%= def_edit[0].leadership %> " type="text" class="validate">
+                      <label for="leadership">leadership et approbation du project</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input name="domaine"  value="<%= def_edit[0].domaine %> " type="text" class="validate">
+                        <label for="domaine">domaine d'application</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col s12"> 
+
+                        <div class="input-field col s12">
+                          <input name="politque"  value="<%= def_edit[0].politque %> "  type="text" class="validate">
+                            <label for="politque">politique de securite:</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col s12">
+
+
+                          <div class="input-field col s12">
+                            <input name="management" value="<%= def_edit[0].management %> " type="text" class="validate">
+                              <label for="management">management ou risque:</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col s12">
+
+
+                            <div class="input-field col s12">
+                              <input name="structure" value="<%= def_edit[0].structure %> " type="text" class="validate">
+                                <label for="structure">structure organistationelle :</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col s12">
+
+
+                              <div class="input-field col s12 ">
+                                <label for="declaration">declaration d'application :</label>
+
+                                <input name="declaration" value="<%= def_edit[0].declaration %> "  type="text" class="validate">
+                                </div>
+
+                                <div class="input-field col s12">
+                                  <button   class="btn waves-effect waves-light gradient-45deg-indigo-blue left" type="submit"> Save
+                                    <i class="material-icons right">send</i>
+                                  </button>
+                                </div>
+
+                              </div>
+                            </div>
+                          
+                          </form>
+                        </div>  
+						

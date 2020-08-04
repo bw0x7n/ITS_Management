@@ -376,10 +376,10 @@ gradient-shadow">
 <table>
 <thead>
 <tr>
-  <th>id</th>
+  <th>Status</th>
 
   <th>Services </th>
-<th>Editor Name  </th>
+<th>Date  </th>
 <th>Edit</th>
 <th>Delete</th>
 </tr>
@@ -389,22 +389,22 @@ gradient-shadow">
           <% for(var i=0; i<definir.length; i++){ %>
         <tr>
 
-          <td>  </td>
+          <td>  <div class="col s3">
+            <span class="task-cat teal accent-4">on</span>
+          </div>  </td>
 
         <td>  DEFINIR ET ETABLIR </td>
-        <td> <%= definir[i].id %>  </td>
+        <td> <%= definir[i].date %>  </td>
        
 
         <td>  
-        <form action ="/edit/" method="POST"> 
-            <a class="btn-floating waves-effect waves-light blue lightrn-1">
+           <a   href="/edit?id=<%= definir[i].id %>&id_user=<%= definir[i].id_user %>&type=definir"   class="btn-floating waves-effect waves-light blue lightrn-1">
             <i class="material-icons">mode_edit</i>
-            </a>
-          </form>
-        </td>
+          </a>
+         </td>
 
         <td>
-          <form action ="/delete/<%= definir[i].id %>" method="POST"> 
+          <form action ="/delete/definir/<%= definir[i].id %>/<%= definir[i].id_user %>" method="get"> 
 
         <button   type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
         <i class="material-icons">delete</i>
@@ -426,20 +426,20 @@ gradient-shadow">
 
 
         <% for(var i=0; i<mettre.length; i++){ %>
-          <tr> <td>  </td>
-          <td> METTRE EN OEUVRE&OPERER           </td>
-          <td> <%= mettre[i].id %>  </td>
+          <tr>  <td>  <div class="col s3">
+            <span class="task-cat teal accent-4">on</span>
+          </div>  </td>
+          <td> METTRE EN OEUVRE ET OPERER           </td>
+          <td> <%= mettre[i].date %>  </td>
    
           <td>  
-          <form action ="/edit/" method="POST"> 
-              <a class="btn-floating waves-effect waves-light blue lightrn-1">
-              <i class="material-icons">mode_edit</i>
-              </a>
-            </form>
+            <a   href="/edit?id=<%= mettre[i].id %>&id_user=<%= mettre[i].id_user %>&type=mettre"   class="btn-floating waves-effect waves-light blue lightrn-1">
+             <i class="material-icons">mode_edit</i>
+           </a>
           </td>
   
           <td>
-            <form action ="/delete/<%= mettre[i].id %>" method="POST"> 
+            <form action ="/delete/mettre/<%= mettre[i].id %>/<%= mettre[i].id_user %>" method="get"> 
   
           <button   type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
           <i class="material-icons">delete</i>
@@ -451,20 +451,20 @@ gradient-shadow">
           <% } %>
 
           <% for(var i=0; i<surveiller.length; i++){ %>
-            <tr> <td>  </td>
+            <tr>  <td>  <div class="col s3">
+              <span class="task-cat teal accent-4">on</span>
+            </div>  </td>
             <td> SURVEILLER ET REVOIR            </td>
-            <td> <%= surveiller[i].id %>  </td>
+            <td> <%= surveiller[i].date %>  </td>
      
             <td>  
-            <form action ="/edit/" method="POST"> 
-                <a class="btn-floating waves-effect waves-light blue lightrn-1">
-                <i class="material-icons">mode_edit</i>
-                </a>
-              </form>
+              <a   href="/edit?id=<%= surveiller[i].id %>&id_user=<%= surveiller[i].id_user %>&type=surveiller"   class="btn-floating waves-effect waves-light blue lightrn-1">
+               <i class="material-icons">mode_edit</i>
+             </a>
             </td>
     
             <td>
-              <form action ="/delete/<%= surveiller[i].id %>" method="POST"> 
+              <form action ="/delete/surveiller/<%= surveiller[i].id %>/<%= surveiller[i].id_user %>" method="get"> 
     
             <button   type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
             <i class="material-icons">delete</i>
@@ -477,20 +477,21 @@ gradient-shadow">
 
 
             <% for(var i=0; i<maintenir.length; i++){ %>
-              <tr> <td>  </td>
+              <tr>  <td>  <div class="col s3">
+                <span class="task-cat teal accent-4">on</span>
+              </div>  </td>
               <td> Maintenir Et AMELIORER     </td>
-              <td> <%= maintenir[i].id %>  </td>
+              <td> <%= maintenir[i].date %>  </td>
        
+          
               <td>  
-              <form action ="/edit/" method="POST"> 
-                  <a class="btn-floating waves-effect waves-light blue lightrn-1">
-                  <i class="material-icons">mode_edit</i>
-                  </a>
-                </form>
+                <a   href="/edit?id=<%= maintenir[i].id %>&id_user=<%= maintenir[i].id_user %>&type=maintenir"   class="btn-floating waves-effect waves-light blue lightrn-1">
+                 <i class="material-icons">mode_edit</i>
+               </a>
               </td>
       
               <td>
-                <form action ="/delete/<%= maintenir[i].id %>" method="POST"> 
+                <form action ="/delete/maintenir/<%= maintenir[i].id %>/<%= maintenir[i].id_user %>" method="get"> 
       
               <button   type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
               <i class="material-icons">delete</i>

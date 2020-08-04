@@ -1,0 +1,42 @@
+
+
+ <div        id="tab3"class="row">
+                                        <form   action="/update_surr" method="POST" class="col s12">
+                                          <h4>Surveiller Et Revoir Form :  </h4>
+
+                                          <input hidden name="id_user"  value ="<%= user.id %> " type="text" class="validate">
+                                          <input hidden name="id"  value ="<%=  id  %> " type="text" class="validate">
+                              
+                                        
+                                          <div class="row">
+                                            <div class="input-field col s6">
+                                              <input name="suivi" value ="<%=  sur_edit[0].suivi  %> "  type="text" class="validate">
+                                                <label for="suivi">suivi mesure </label>
+                                              </div>
+                                              <div class="input-field col s6">
+                                                <input name="evaluation"  value ="<%=  sur_edit[0].evaluation  %> " type="text" class="validate">
+                                                  <label for="evaluation">analyse et evaluation </label>
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="input-field col s12">
+                                                  <input  name="audit"    value ="<%=  sur_edit[0].audit  %> " type="text" class="validate">
+                                                    <label for="audit">audit interne </label>
+                                                  </div>
+                                                </div>
+                                                <div class="row">
+                                                  <div class="input-field col s12">
+                                                    <input name="direction"  value ="<%=  sur_edit[0].direction  %> "  type="text" class="validate">
+                                                      <label for="direction">revue de direction</label>
+                                                    </div>
+
+                                                    <div class="input-field col s12">
+                                                      <button class="btn waves-effect waves-light gradient-45deg-indigo-blue left" type="submit" > Save
+                                                        <i class="material-icons right">send</i>
+                                                      </button>
+                                                    </div>
+                                                  </div>
+                                                
+                                                </form>
+                                              </div>
+

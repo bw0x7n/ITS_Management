@@ -1,0 +1,38 @@
+
+
+              <div         id="tab4"class="row">
+                                                <form  action="/update_main " method="POST"  class="col s12">
+                                               
+                                               
+                                               
+                                             <h4>Maintenir et Améliorer Form :   </h4>
+
+                                             <input hidden name="id_user"  value ="<%= user.id %> " type="text" class="validate">
+                                             <input hidden name="id"  value ="<%=  id  %> " type="text" class="validate">
+                                 
+                                             
+                                             
+                                             <div class="row">
+                                                    <div class="input-field col s6">
+                                                      <input name="maintenir"  value ="<%=  main_edit[0].maintenir  %> " type="text" class="validate">
+                                                        <label for="maintenir">maintenir et améliorer</label>
+                                                      </div>
+                                                      <div class="input-field col s6">
+                                                        <input name="traitement" value ="<%=  main_edit[0].traitement  %> " type="text" class="validate">
+                                                          <label for="traitement">traitement des non-confomites</label>
+                                                        </div>
+                                                      </div>
+                                                      <div class="row">
+                                                        <div class="input-field col s12">
+                                                          <input  name="Amelioration" value ="<%=  main_edit[0].Amelioration  %> " type="text" class="validate">
+                                                            <label for="Amélioration">Amélioration continue</label>
+                                                          </div>
+                                                          <div class="input-field col s12">
+                                                            <button class="btn waves-effect waves-light gradient-45deg-indigo-blue left" type="submit"  > Save
+                                                              <i class="material-icons right">send</i>
+                                                            </button>
+                                                          </div> 
+                                                        </div>
+                                                        
+                                                      </form>
+                                                    </div>

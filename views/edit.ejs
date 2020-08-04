@@ -1,0 +1,163 @@
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+        <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+        <title>ITS Management</title>
+        <!-- Favicons-->
+        <link rel="icon" href="static/images/favicon/favicon-32x32.png" sizes="32x32">
+        <!-- Favicons-->
+        <link rel="apple-touch-icon-precomposed" href="../images/favicon/apple-touch-icon-152x152.png">
+        <!-- For iPhone -->
+        <meta name="msapplication-TileColor" content="#00bcd4">
+        <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+        <!-- For Windows Phone -->
+        <!-- CORE CSS-->
+        <link href="../css//materialize.css" type="text/css" rel="stylesheet">
+        <link href="../css//style.css" type="text/css" rel="stylesheet">
+        <!-- Custome CSS-->
+        <link href="../css/custom/custom.css" type="text/css" rel="stylesheet">
+        <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+        <link href="../vendors/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet">
+        <link href="../vendors/flag-icon/css/flag-icon.min.css" type="text/css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    
+    </head><body class="loaded"  >
+<!-- Start Page Loading -->
+<div id="loader-wrapper">
+<div id="loader"></div>
+<div class="loader-section section-left"></div>
+<div class="loader-section section-right"></div>
+</div>
+<!-- End Page Loading -->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!-- START HEADER -->
+<header id="header" class="page-topbar">
+<!-- start header nav-->
+<div class="navbar-fixed">
+<nav class="navbar-color gradient-45deg-indigo-blue
+">
+<div class="nav-wrapper">
+<ul class="left">
+<li>
+<h1 class="logo-wrapper">
+<a href="index.html" class="brand-logo darken-1">
+<img src="images/logo/materialize-logo.png" alt="materialize logo">
+<span class="logo-text hide-on-med-and-down">ITS management</span>
+</a>
+</h1>
+</li>
+</ul>
+<div class="header-search-wrapper hide-on-med-and-down"></div>
+<!-- translation-button -->
+<!-- notifications-dropdown -->
+<!-- profile-dropdown -->
+</div>
+</nav>
+</div>
+<!-- end header nav-->
+</header>
+<!-- END HEADER -->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!-- START MAIN -->
+<div id="main">
+<!-- START WRAPPER -->
+<div class="wrapper">
+<!-- START LEFT SIDEBAR NAV--><%  include includes/navbar.ejs %>
+<!-- END LEFT SIDEBAR NAV-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!-- START CONTENT -->
+<section id="content">
+<!--start container-->
+<div class="container">
+<div id="card-widgets">
+<div class="row">
+<div class="col s12 m12 l4">
+<div id="flight-card" class="card">
+<div class="card-header deep-orange accent-2"></div>
+<div class="card-content-bg white-text"></div>
+</div>
+</div>
+</div>
+</div>
+<!--card widgets end-->
+<!--work collections start-->
+<div id="work-collections">
+<div class="row">
+<div class="col s12 m12">
+<div class="card-panel z-depth-5">
+ <div class="row">
+ 
+ 
+
+
+<% if ( type ==='definir') { %>
+
+    <%  include includes/update_form/def_form.ejs %>
+
+<% }else if (type === 'maintenir') { %>
+
+    <%  include includes/update_form/main_form.ejs %>
+
+
+
+    <% }else if (type === 'mettre') { %>
+
+
+        <%  include includes/update_form/met_form.ejs %>
+
+        <%}else if (type === 'surveiller') { %>
+
+            <%  include includes/update_form/surr_form.ejs %>
+
+
+<% }%>
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--work collections end-->
+ </div>
+<!--end container-->
+</section>
+<!-- START LEFT SIDEBAR NAV--><%  include includes/navbar.ejs %>
+<!-- END LEFT SIDEBAR NAV-->
+</div>
+<!-- END WRAPPER -->
+</div>
+<!-- END MAIN -->
+<!-- START FOOTER -->
+
+
+<%  include includes/footer.ejs %>
+
+<!-- END FOOTER -->
+<!-- ================================================
+Scripts
+================================================ -->
+<!-- jQuery Library -->
+<script type="text/javascript" src="vendors/jquery-3.2.1.min.js"></script>
+<!--materialize js-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<!--scrollbar-->
+<script type="text/javascript" src="vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<!--plugins.js - Some Specific JS codes for Plugin Settings-->
+<script type="text/javascript" src="js/plugins.js"></script>
+<!--custom-script.js - Add your own theme custom JS-->
+<script type="text/javascript" src="js/custom-script.js"></script>
+<div class="hiddendiv common"></div>
+<div class="drag-target" data-sidenav="chat-out" style="right: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+<div class="hiddendiv common"></div>
+<div class="drag-target" data-sidenav="chat-out" style="right: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+<div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+</body>
+</html>

@@ -3,9 +3,16 @@
 canvas{ display: block; vertical-align: bottom; }
  /* ---- particles.js container ---- */ 
 #particles-js{ position: fixed; width: 100%; 
+<<<<<<< HEAD
     height: 100%; 
     background-color: #0656c3;
     background-image: linear-gradient(19deg, #218dfd 0%, #3921ff 100%);
       background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } 
+=======
+ height: 100%;
+ background-color: rgb(84,138,255);background-image: url("");
+background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
+     } 
+>>>>>>> 8a3720bccc9a046ea965dd9d55ff0fd16a3307cb
 /* ---- stats.js ---- */ 
 

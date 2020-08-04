@@ -1,0 +1,53 @@
+
+						 <div       id="tab2"class="row">
+                            <form  action="/update_met" method="POST"  class="col s12">
+                              <h4>Mettre En Oeuvre et Operer Form :   </h4>
+
+
+                              <input hidden name="id_user"  value ="<%= user.id %> " type="text" class="validate">
+                              <input hidden name="id"  value ="<%=  id  %> " type="text" class="validate">
+                  
+                              <div class="row">
+                                <div class="input-field col s6">
+                                  <input name="conception"  value ="<%= met_edit[0].conception %> "  type="text" class="validate">
+                                    <label for="conception"> conception des mesures et des procedure</label>
+                                  </div>
+                                  <div class="input-field col s6">
+                                    <input name="mise" value ="<%= met_edit[0].mise %> "  type="text" class="validate">
+                                      <label for="mise"> mise en oeuvre des mesures</label>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="input-field col s6">
+                                      <input  name="gestion"  value ="<%= met_edit[0].gestion %> " type="text" class="validate">
+                                        <label for="gestion">gestion dela documentation</label>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="input-field col s12">
+                                        <input name="communication" value ="<%= met_edit[0].communication %> "  type="text" class="validate">
+                                          <label for="communication">communication</label>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="input-field col s12">
+                                          <input name="senssibilisaton"  value ="<%= met_edit[0].senssibilisaton %> " type="text" class="validate">
+                                            <label for="senssibilisaton">senssibilisaton et formation </label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col s12">
+                                            <div class="input-field inline">
+                                              <label for="operations"> gestion des operations </label>
+                                              <input name="operations"  value ="<%= met_edit[0].operations %> " type="text" class="validate">
+                                              </div>
+                                            </div>
+                                            <div class="input-field col s12">
+                                              <button class="btn waves-effect waves-light gradient-45deg-indigo-blue left" type="submit" > Save
+                                                <i class="material-icons right">send</i>
+                                              </button>
+                                            </div> 
+                                          </div>
+                                        
+                                        </form>
+                                      </div>
