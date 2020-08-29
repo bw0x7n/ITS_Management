@@ -2,418 +2,314 @@
 
 <% include includes/head.ejs %>
 
-<body class="loaded"  >
-<!-- Start Page Loading -->
-<div id="loader-wrapper">
-<div id="loader"></div>
-<div class="loader-section section-left"></div>
-<div class="loader-section section-right"></div>
-</div>
-<!-- End Page Loading -->
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
 
-<!-- //////////////////////////////////////////////////////////////////////////// -->
-<!-- START HEADER -->
-<header id="header" class="page-topbar">
-<!-- start header nav-->
-<div class="navbar-fixed">
-<nav class="navbar-color gradient-45deg-indigo-blue
+    <body class="loaded">
+        <!-- Start Page Loading -->
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+        <!-- End Page Loading -->
+
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!-- START HEADER -->
+        <header id="header" class="page-topbar">
+            <!-- start header nav-->
+            <div class="navbar-fixed">
+                <nav class="navbar-color gradient-45deg-indigo-blue
 ">
-<div class="nav-wrapper">
-<ul class="left">
-<li>
-<h1 class="logo-wrapper">
-<a href="index.html" class="brand-logo darken-1">
-  <img src="images/logo/materialize-logo.png" alt="materialize logo">
-    <span class="logo-text hide-on-med-and-down">ITS management</span>
-  </a>
-</h1>
-</li>
-</ul>
-<div class="header-search-wrapper hide-on-med-and-down"></div>
-<!-- translation-button -->
-<!-- notifications-dropdown -->
-<!-- profile-dropdown -->
-</div>
-</nav>
-</div>
-<!-- end header nav-->
-</header>
-<!-- END HEADER -->
-<!-- //////////////////////////////////////////////////////////////////////////// -->
-<!-- START MAIN -->
-<div id="main">
-<!-- START WRAPPER -->
-<div class="wrapper">
-<!-- START LEFT SIDEBAR NAV-->
+                    <div class="nav-wrapper">
+                        <ul class="left">
+                            <li>
+                                <h1 class="logo-wrapper">
+                                    <a href="index.html" class="brand-logo darken-1">
+                                        <img src="images/logo/materialize-logo.png" alt="materialize logo">
+                                        <span class="logo-text hide-on-med-and-down">ITS management</span>
+                                    </a>
+                                </h1>
+                            </li>
+                        </ul>
+                        <div class="header-search-wrapper hide-on-med-and-down"></div>
+                        <!-- translation-button -->
+                        <!-- notifications-dropdown -->
+                        <!-- profile-dropdown -->
+                    </div>
+                </nav>
+            </div>
+            <!-- end header nav-->
+        </header>
+        <!-- END HEADER -->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!-- START MAIN -->
+        <div id="main">
+            <!-- START WRAPPER -->
+            <div class="wrapper">
+                <!-- START LEFT SIDEBAR NAV-->
 
 
-<%  include includes/navbar.ejs %>
-
-
-
-<!-- END LEFT SIDEBAR NAV-->
+                <%  include includes/navbar.ejs %>
 
 
 
+                    <!-- END LEFT SIDEBAR NAV-->
 
-<!-- START CONTENT -->
-<section id="content">
-<!--start container-->
-<div class="container">
-<!--card stats start-->
-<div id="card-stats">
-<div class="row mt-1">
-  <div class="col s12 s6 l3">
-    <div class="card gradient-45deg-indigo-blue
+
+
+
+                    <!-- START CONTENT -->
+                    <section id="content">
+                        <!--start container-->
+                        <div class="container">
+                            <!--card stats start-->
+                            <div id="card-stats">
+                                <div class="row mt-1">
+                                    <div class="col s12 s6 l3">
+                                        <div class="card gradient-45deg-indigo-blue
 gradient-shadow">
-      <div class="card-content white-text">
-        <i class="material-icons background-round mt-5">fingerprint
+                                            <div class="card-content white-text">
+                                                <i class="material-icons background-round mt-5">fingerprint
 
 </i>
-        <br>
-          <br>
-            <span class="card-title">DEFINIR ET ETABLIR</span>
-            <p></p>
-          </div>
-          <div class="card-action">
-            <p class="center-align">
-              <button   href="#!"    onclick="tab1();" class="waves-effect waves-light btn blue"   >DEFINIR ET ETABLIR</button>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 s6 l3">
-        <div class="card gradient-45deg-indigo-purple gradient-shadow">
-          <div class="card-content white-text">
-            <i class="material-icons background-round mt-5">build</i>
-            <br>
-              <br>
-                <span class="card-title">METTRE EN OEUVRE&amp;OPERER</span>
-                <p></p>
-              </div>
-              <div class="card-action">
-                <p class="center-align">
-                  <button href="#!"   onclick="tab2();" class="waves-effect waves-light btn gradient-45deg-indigo-purple">METTRE EN OEUVRE&amp;OPERER </button>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 s6 l3">
-            <div class="card gradient-45deg-deep-purple-blue
-gradient-shadow">
-              <div class="card-content white-text">
-                <i class="material-icons background-round mt-5">videocam</i>
-                <br>
-                  <br>
-                    <span class="card-title">SURVEILLER ET REVOIR</span>
-                    <p></p>
-                  </div>
-                  <div class="card-action">
-                    <p class="center-align">
-                      <button href="#!"   onclick="tab3();"class="waves-effect waves-light btn gradient-45deg-deep-purple-blue">SURVEILLER ET REVOIR</button>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col s12 s6 l3">
-                <div class="card gradient-45deg-amber-amber
-
-gradient-shadow">
-                  <div class="card-content white-text">
-                    <i class="material-icons background-round mt-5">settings</i>
-                    <br>
-                      <br>
-                        <span class="card-title">maintenir et améliorer </span>
-                        <p></p>
-                      </div>
-                      <div class="card-action">
-                        <p class="center-align">
-                          <button href="#!"   onclick="tab4();" class="waves-effect waves-light btn gradient-45deg-amber-amber
-">maintenir et améliorer </button>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- ----------------- TAB1  -------------------------------- -->
-
-
-
-
-                <div    class="card-panel z-depth-5" style="display: none;"  id="tab1"class="row">
-                  <form  action="/definir" method="POST" class="col s12">
-                    <h4>Definir Et Etablir Form :  </h4>
-                    <div class="row">
-
-
-
-                         <input hidden name="id"  value ="<%= user.id %> " type="text" class="validate">
-
-                        <div class="input-field col s6">
-                          <input name="intier" type="text" class="validate">
-                            <label for="intier">intier le smsi                      </label>
-                          </div>
-
-                        <div class="input-field col s6">
-                          <input name="compr" type="text" class="validate">
-                            <label for="compr">comprehension de lorganisation                       </label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="input-field col s12">
-                            <input  name="analyse" type="text" class="validate">
-                              <label for="analyse">analyse le systeme existant</label>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="input-field col s12">
-                              <input name="leadership" type="text" class="validate">
-                                <label for="leadership">leadership et approbation du project</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <input name="domaine" type="text" class="validate">
-                                  <label for="domaine">domaine d'application</label>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col s12"> 
-
-                                  <div class="input-field col s12">
-                                    <input name="politque" type="text" class="validate">
-                                      <label for="politque">politique de securite:</label>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col s12">
-
-
-                                    <div class="input-field col s12">
-                                      <input name="management" type="text" class="validate">
-                                        <label for="management">management ou risque:</label>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col s12">
-
-
-                                      <div class="input-field col s12">
-                                        <input name="structure" type="text" class="validate">
-                                          <label for="structure">structure organistationelle :</label>
+                                                <br>
+                                                <br>
+                                                <span class="card-title">DEFINIR ET ETABLIR</span>
+                                                <p></p>
+                                            </div>
+                                            <div class="card-action">
+                                                <p class="center-align">
+                                                    <button href="#!" onclick="tab1();" class="waves-effect waves-light btn blue">DEFINIR ET ETABLIR</button>
+                                                </p>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
-                                    <div class="row">
-                                      <div class="col s12">
+                                    <div class="col s12 s6 l3">
+                                        <div class="card gradient-45deg-indigo-purple gradient-shadow">
+                                            <div class="card-content white-text">
+                                                <i class="material-icons background-round mt-5">build</i>
+                                                <br>
+                                                <br>
+                                                <span class="card-title">METTRE EN OEUVRE&amp;OPERER</span>
+                                                <p></p>
+                                            </div>
+                                            <div class="card-action">
+                                                <p class="center-align">
+                                                    <button href="#!" onclick="tab2();" class="waves-effect waves-light btn gradient-45deg-indigo-purple">METTRE EN OEUVRE&amp;OPERER </button>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 s6 l3">
+                                        <div class="card gradient-45deg-deep-purple-blue
+gradient-shadow">
+                                            <div class="card-content white-text">
+                                                <i class="material-icons background-round mt-5">videocam</i>
+                                                <br>
+                                                <br>
+                                                <span class="card-title">SURVEILLER ET REVOIR</span>
+                                                <p></p>
+                                            </div>
+                                            <div class="card-action">
+                                                <p class="center-align">
+                                                    <button href="#!" onclick="tab3();" class="waves-effect waves-light btn gradient-45deg-deep-purple-blue">SURVEILLER ET REVOIR</button>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 s6 l3">
+                                        <div class="card gradient-45deg-amber-amber
+
+gradient-shadow">
+                                            <div class="card-content white-text">
+                                                <i class="material-icons background-round mt-5">settings</i>
+                                                <br>
+                                                <br>
+                                                <span class="card-title">maintenir et améliorer </span>
+                                                <p></p>
+                                            </div>
+                                            <div class="card-action">
+                                                <p class="center-align">
+                                                    <button href="#!" onclick="tab4();" class="waves-effect waves-light btn gradient-45deg-amber-amber">maintenir et améliorer </button>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ----------------- TAB1  -------------------------------- -->
 
 
-                                        <div class="input-field col s12 ">
-                                          <label for="declaration">declaration d'application :</label>
 
-                                          <input name="declaration" type="text" class="validate">
-                                          </div>
 
-                                          <div class="input-field col s12">
-                                            <button   class="btn waves-effect waves-light gradient-45deg-indigo-blue left" type="submit"> Save
+                                <div class="card-panel z-depth-5" style="display: none;" id="tab1" class="row">
+                                    <form action="/definir" method="POST" class="col s12">
+                                        <h4>Definir Et Etablir : </h4>
+                                        <input hidden name="id" value="<%= user.id %> " type="text" class="validate">
+                                        <div class="row">
+                                            <a class="waves-effect waves-light btn bouton boutonleft col s4"> <i class="material-icons left">play_for_work</i>intier le smsi </a>
+
+                                            <a class="waves-effect waves-light btn bouton col s4"><i class="material-icons left">people</i>comprehension de lorganisation </a>
+
+                                            <a class="waves-effect waves-light btn bouton boutonleft col s4"><i class="material-icons left">search</i>analyse le systeme existant </a>
+
+                                            <a class="waves-effect waves-light btn bouton col s4"><i class="material-icons left">assistant_photo</i>leadership et approbation du project </a>
+
+                                            <a class="waves-effect waves-light btn bouton boutonleft col s4"><i class="material-icons left">apps</i>domaine d'application </a>
+
+                                            <a class="waves-effect waves-light btn bouton col s4"><i class="material-icons left">report_problem</i>management ou risque </a>
+
+                                            <a class="waves-effect waves-light btn bouton boutonleft col s4"><i class="material-icons left">select_all</i>structure organistationelle  </a>
+
+                                            <a class="waves-effect waves-light btn bouton col s4"><i class="material-icons left">settings_applications</i>declaration d'application  </a>
+
+                                            <button class="btn waves-effect waves-light gradient-45deg-indigo-blue right col s2  " type="submit"> Save
+                                             <i class="material-icons right">send</i>
+                                           </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- ----------------- END TAB1 -------------------------------- -->
+                                <!-- ----------------- TAB2 -------------------------------- -->
+                                <div class="card-panel z-depth-5" style="display: none;" id="tab2" class="row">
+                                    <form action="/mettre" method="POST" class="col s12">
+                                        <h4>Mettre En Oeuvre et Operer : </h4>
+                                        <input hidden name="id" value="<%= user.id %> " type="text" class="validate">
+                                        <div class="row">
+                                            <a class="waves-effect waves-light btn bouton boutonleft col s4"> <i class="material-icons left">play_for_work</i>conception des mesures et des procedure </a>
+
+                                            <a class="waves-effect waves-light btn bouton col s4"><i class="material-icons left">people</i> mise en oeuvre des mesures </a>
+
+                                            <a class="waves-effect waves-light btn bouton boutonleft col s4"><i class="material-icons left">search</i>gestion dela documentation </a>
+
+                                            <a class="waves-effect waves-light btn bouton col s4"><i class="material-icons left">assistant_photo</i>communication </a>
+
+                                            <a class="waves-effect waves-light btn bouton boutonleft col s4"><i class="material-icons left">apps</i>senssibilisaton et formation </a>
+
+                                            <a class="waves-effect waves-light btn bouton col s4"><i class="material-icons left">report_problem</i> gestion des operations </a>
+
+                                            <button class="btn waves-effect waves-light gradient-45deg-indigo-blue right col s2  " type="submit"> Save
                                               <i class="material-icons right">send</i>
                                             </button>
-                                          </div>
-
                                         </div>
-                                      </div>
-                                    
+
                                     </form>
-                                  </div>
-                                  <!-- ----------------- END TAB1 -------------------------------- -->
-                                  <!-- ----------------- TAB2 -------------------------------- -->
-                                  <div    class="card-panel z-depth-5"   style="display: none;"  id="tab2"class="row">
-                                    <form  action="/mettre" method="POST"  class="col s12">
-                                      <h4>Mettre En Oeuvre et Operer Form :   </h4>
+                                </div>
+                                <!-- ----------------- END TAB2 -------------------------------- -->
+                                <!-- ----------------- TAB3 -------------------------------- -->
+                                <div class="card-panel z-depth-5 " style="display: none; " id="tab3 " class="row ">
+                                    <form action="/SURVEILLER " method="POST " class="col s12 ">
+                                        <h4>Surveiller Et Revoir Form : </h4>
+                                        <input hidden name="id " value="<%=user.id %> " type="text" class="validate">
 
-                                      <input hidden name="id"  value ="<%= user.id %> " type="text" class="validate">
 
-                                      <div class="row">
-                                        <div class="input-field col s6">
-                                          <input name="conception" type="text" class="validate">
-                                            <label for="conception"> conception des mesures et des procedure</label>
-                                          </div>
-                                          <div class="input-field col s6">
-                                            <input name="mise" type="text" class="validate">
-                                              <label for="mise"> mise en oeuvre des mesures</label>
-                                            </div>
-                                          </div>
-                                          <div class="row">
-                                            <div class="input-field col s6">
-                                              <input  name="gestion" type="text" class="validate">
-                                                <label for="gestion">gestion dela documentation</label>
-                                              </div>
-                                            </div>
-                                            <div class="row">
-                                              <div class="input-field col s12">
-                                                <input name="communication" type="text" class="validate">
-                                                  <label for="communication">communication</label>
-                                                </div>
-                                              </div>
-                                              <div class="row">
-                                                <div class="input-field col s12">
-                                                  <input name="senssibilisaton" type="text" class="validate">
-                                                    <label for="senssibilisaton">senssibilisaton et formation </label>
-                                                  </div>
-                                                </div>
-                                                <div class="row">
-                                                  <div class="col s12">
-                                                    <div class="input-field inline">
-                                                      <label for="operations"> gestion des operations </label>
-                                                      <input name="operations" type="text" class="validate">
-                                                      </div>
+                                        <div class="row">
+                                            <a class="waves-effect waves-light btn bouton boutonleft col s4"><i class="material-icons left">search</i>suivi mesure </a>
+
+                                            <a class="waves-effect waves-light btn bouton col s4"><i class="material-icons left">assistant_photo</i>analyse et evaluation </a>
+
+                                            <a class="waves-effect waves-light btn bouton boutonleft col s4"><i class="material-icons left">apps</i>audit interne </a>
+
+                                            <a class="waves-effect waves-light btn bouton col s4"><i class="material-icons left">report_problem</i> revue de directio </a>
+
+                                            <button class="btn waves-effect waves-light gradient-45deg-indigo-blue right col s2  " type="submit"> Save
+                                              <i class="material-icons right">send</i>
+                                            </button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <!-- ----------------- END TAB3 -------------------------------- -->
+                                <!-- ----------------- TAB4 DEFINIR ET ETABLIR FORM -------------------------------- -->
+                                <div class="card-panel z-depth-5" style="display: none;" id="tab4" class="row">
+                                    <form action="/maintenir " method="POST" class="col s12">
+
+
+
+                                        <h4>Maintenir et Améliorer Form : </h4>
+                                        <input hidden name="id" value="<%= user.id %> " type="text" class="validate">
+
+
+
+                                        <div class="row">
+                                            <a class="waves-effect waves-light btn bouton boutonleft col s4"><i class="material-icons left">search</i>maintenir et améliorer </a>
+
+                                            <a class="waves-effect waves-light btn bouton col s4"><i class="material-icons left">assistant_photo</i>traitement des non-confomites </a>
+                                            <div class="col s3"></div>
+                                            <a class="waves-effect waves-light btn bouton boutonleft col s4"><i class="material-icons left">apps</i>Amélioration continue</a>
+                                            <div class="col s3"></div>
+                                            <button class="btn waves-effect waves-light gradient-45deg-indigo-blue right col s2  " type="submit"> Save
+                                            <i class="material-icons right">send</i>
+                                          </button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <!-- ----------------- END TAB4 -------------------------------- -->
+                            </div>
+                            <!--card widgets start-->
+                            <div id="card-widgets">
+                                <div class="row">
+                                    <div class="col s12 m12 l4">
+                                        <div id="flight-card" class="card">
+                                            <div class="card-header deep-orange accent-2"></div>
+                                            <div class="card-content-bg white-text"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--card widgets end-->
+
+
+
+                            <div class="card-panel z-depth-5">
+
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Status</th>
+
+                                            <th>Services </th>
+                                            <th>Date </th>
+                                            <th>Edit</th>
+                                            <th>Delete</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <% for(var i=0; i<definir.length; i++){ %>
+                                            <tr>
+
+                                                <td>
+                                                    <div class="col s3">
+                                                        <span class="task-cat teal accent-4">on</span>
                                                     </div>
-                                                    <div class="input-field col s12">
-                                                      <button class="btn waves-effect waves-light gradient-45deg-indigo-blue left" type="submit" "> Save
-                                                        <i class="material-icons right">send</i>
-                                                      </button>
-                                                    </div> 
-                                                  </div>
-                                                
-                                                </form>
-                                              </div>
-                                              <!-- ----------------- END TAB2 -------------------------------- -->
-                                              <!-- ----------------- TAB3 -------------------------------- -->
-                                              <div   class="card-panel z-depth-5"   style="display: none;"  id="tab3"class="row">
-                                                <form   action="/SURVEILLER " method="POST" class="col s12">
-                                                  <h4>Surveiller Et Revoir Form :  </h4>
-                                                  <input hidden name="id"  value ="<%= user.id %> " type="text" class="validate">
+                                                </td>
 
-                                                
-                                                  <div class="row">
-                                                    <div class="input-field col s6">
-                                                      <input name="suivi" type="text" class="validate">
-                                                        <label for="suivi">suivi mesure </label>
-                                                      </div>
-                                                      <div class="input-field col s6">
-                                                        <input name="evaluation" type="text" class="validate">
-                                                          <label for="evaluation">analyse et evaluation </label>
-                                                        </div>
-                                                      </div>
-                                                      <div class="row">
-                                                        <div class="input-field col s12">
-                                                          <input  name="audit" type="text" class="validate">
-                                                            <label for="audit">audit interne </label>
-                                                          </div>
-                                                        </div>
-                                                        <div class="row">
-                                                          <div class="input-field col s12">
-                                                            <input name="direction" type="text" class="validate">
-                                                              <label for="direction">revue de direction</label>
-                                                            </div>
-
-                                                            <div class="input-field col s12">
-                                                              <button class="btn waves-effect waves-light gradient-45deg-indigo-blue left" type="submit" > Save
-                                                                <i class="material-icons right">send</i>
-                                                              </button>
-                                                            </div>
-                                                          </div>
-                                                        
-                                                        </form>
-                                                      </div>
-                                                      <!-- ----------------- END TAB3 -------------------------------- -->
-                                                      <!-- ----------------- TAB4 DEFINIR ET ETABLIR FORM -------------------------------- -->
-                                                      <div     class="card-panel z-depth-5"  style="display: none;"  id="tab4"class="row">
-                                                        <form  action="/maintenir " method="POST"  class="col s12">
-                                                       
-                                                       
-                                                       
-                                                     <h4>Maintenir et Améliorer Form :   </h4>
-                                                     <input hidden name="id"  value ="<%= user.id %> " type="text" class="validate">
-
-                                                     
-                                                     
-                                                     <div class="row">
-                                                            <div class="input-field col s6">
-                                                              <input name="maintenir" type="text" class="validate">
-                                                                <label for="maintenir">maintenir et améliorer</label>
-                                                              </div>
-                                                              <div class="input-field col s6">
-                                                                <input name="traitement" type="text" class="validate">
-                                                                  <label for="traitement">traitement des non-confomites</label>
-                                                                </div>
-                                                              </div>
-                                                              <div class="row">
-                                                                <div class="input-field col s12">
-                                                                  <input  name="Amelioration" type="text" class="validate">
-                                                                    <label for="Amélioration">Amélioration continue</label>
-                                                                  </div>
-                                                                  <div class="input-field col s12">
-                                                                    <button class="btn waves-effect waves-light gradient-45deg-indigo-blue left" type="submit"  > Save
-                                                                      <i class="material-icons right">send</i>
-                                                                    </button>
-                                                                  </div> 
-                                                                </div>
-                                                                
-                                                              </form>
-                                                            </div>
-                                                            <!-- ----------------- END TAB4 -------------------------------- -->
-                                                          </div>
-                                                          <!--card widgets start-->
-                                                          <div id="card-widgets">
-                                                            <div class="row">
-                                                              <div class="col s12 m12 l4">
-                                                                <div id="flight-card" class="card">
-                                                                  <div class="card-header deep-orange accent-2"></div>
-                                                                  <div class="card-content-bg white-text"></div>
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                          <!--card widgets end-->
+                                                <td> DEFINIR ET ETABLIR </td>
+                                                <td>
+                                                    <%= definir[i].date %>
+                                                </td>
 
 
+                                                <td>
+                                                    <a href="/edit?id=<%= definir[i].id %>&id_user=<%= definir[i].id_user %>&type=definir" class="btn-floating waves-effect waves-light blue lightrn-1">
+                                                        <i class="material-icons">mode_edit</i>
+                                                    </a>
+                                                </td>
 
-<div class="card-panel z-depth-5">
+                                                <td>
+                                                    <form action="/delete/definir/<%= definir[i].id %>/<%= definir[i].id_user %>" method="get">
 
-<table>
-<thead>
-<tr>
-  <th>Status</th>
-
-  <th>Services </th>
-<th>Date  </th>
-<th>Edit</th>
-<th>Delete</th>
-</tr>
-</thead>
-
-        <tbody>
-          <% for(var i=0; i<definir.length; i++){ %>
-        <tr>
-
-          <td>  <div class="col s3">
-            <span class="task-cat teal accent-4">on</span>
-          </div>  </td>
-
-        <td>  DEFINIR ET ETABLIR </td>
-        <td> <%= definir[i].date %>  </td>
-       
-
-        <td>  
-           <a   href="/edit?id=<%= definir[i].id %>&id_user=<%= definir[i].id_user %>&type=definir"   class="btn-floating waves-effect waves-light blue lightrn-1">
-            <i class="material-icons">mode_edit</i>
-          </a>
-         </td>
-
-        <td>
-          <form action ="/delete/definir/<%= definir[i].id %>/<%= definir[i].id_user %>" method="get"> 
-
-        <button   type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
+                                                        <button type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
         <i class="material-icons">delete</i>
         </button>
 
-        </form>
-        </td>
-        </tr>
-        <% } %>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                            <% } %>
 
 
 
@@ -425,350 +321,369 @@ gradient-shadow">
 
 
 
-        <% for(var i=0; i<mettre.length; i++){ %>
-          <tr>  <td>  <div class="col s3">
-            <span class="task-cat teal accent-4">on</span>
-          </div>  </td>
-          <td> METTRE EN OEUVRE ET OPERER           </td>
-          <td> <%= mettre[i].date %>  </td>
-   
-          <td>  
-            <a   href="/edit?id=<%= mettre[i].id %>&id_user=<%= mettre[i].id_user %>&type=mettre"   class="btn-floating waves-effect waves-light blue lightrn-1">
-             <i class="material-icons">mode_edit</i>
-           </a>
-          </td>
-  
-          <td>
-            <form action ="/delete/mettre/<%= mettre[i].id %>/<%= mettre[i].id_user %>" method="get"> 
-  
-          <button   type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
+                                                <% for(var i=0; i<mettre.length; i++){ %>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="col s3">
+                                                                <span class="task-cat teal accent-4">on</span>
+                                                            </div>
+                                                        </td>
+                                                        <td> METTRE EN OEUVRE ET OPERER </td>
+                                                        <td>
+                                                            <%= mettre[i].date %>
+                                                        </td>
+
+                                                        <td>
+                                                            <a href="/edit?id=<%= mettre[i].id %>&id_user=<%= mettre[i].id_user %>&type=mettre" class="btn-floating waves-effect waves-light blue lightrn-1">
+                                                                <i class="material-icons">mode_edit</i>
+                                                            </a>
+                                                        </td>
+
+                                                        <td>
+                                                            <form action="/delete/mettre/<%= mettre[i].id %>/<%= mettre[i].id_user %>" method="get">
+
+                                                                <button type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
           <i class="material-icons">delete</i>
           </button>
-  
-          </form>
-          </td>
-          </tr>
-          <% } %>
 
-          <% for(var i=0; i<surveiller.length; i++){ %>
-            <tr>  <td>  <div class="col s3">
-              <span class="task-cat teal accent-4">on</span>
-            </div>  </td>
-            <td> SURVEILLER ET REVOIR            </td>
-            <td> <%= surveiller[i].date %>  </td>
-     
-            <td>  
-              <a   href="/edit?id=<%= surveiller[i].id %>&id_user=<%= surveiller[i].id_user %>&type=surveiller"   class="btn-floating waves-effect waves-light blue lightrn-1">
-               <i class="material-icons">mode_edit</i>
-             </a>
-            </td>
-    
-            <td>
-              <form action ="/delete/surveiller/<%= surveiller[i].id %>/<%= surveiller[i].id_user %>" method="get"> 
-    
-            <button   type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                    <% } %>
+
+                                                        <% for(var i=0; i<surveiller.length; i++){ %>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="col s3">
+                                                                        <span class="task-cat teal accent-4">on</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td> SURVEILLER ET REVOIR </td>
+                                                                <td>
+                                                                    <%= surveiller[i].date %>
+                                                                </td>
+
+                                                                <td>
+                                                                    <a href="/edit?id=<%= surveiller[i].id %>&id_user=<%= surveiller[i].id_user %>&type=surveiller" class="btn-floating waves-effect waves-light blue lightrn-1">
+                                                                        <i class="material-icons">mode_edit</i>
+                                                                    </a>
+                                                                </td>
+
+                                                                <td>
+                                                                    <form action="/delete/surveiller/<%= surveiller[i].id %>/<%= surveiller[i].id_user %>" method="get">
+
+                                                                        <button type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
             <i class="material-icons">delete</i>
             </button>
-    
-            </form>
-            </td>
-            </tr>
-            <% } %>
+
+                                                                    </form>
+                                                                </td>
+                                                            </tr>
+                                                            <% } %>
 
 
-            <% for(var i=0; i<maintenir.length; i++){ %>
-              <tr>  <td>  <div class="col s3">
-                <span class="task-cat teal accent-4">on</span>
-              </div>  </td>
-              <td> Maintenir Et AMELIORER     </td>
-              <td> <%= maintenir[i].date %>  </td>
-       
-          
-              <td>  
-                <a   href="/edit?id=<%= maintenir[i].id %>&id_user=<%= maintenir[i].id_user %>&type=maintenir"   class="btn-floating waves-effect waves-light blue lightrn-1">
-                 <i class="material-icons">mode_edit</i>
-               </a>
-              </td>
-      
-              <td>
-                <form action ="/delete/maintenir/<%= maintenir[i].id %>/<%= maintenir[i].id_user %>" method="get"> 
-      
-              <button   type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
+                                                                <% for(var i=0; i<maintenir.length; i++){ %>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="col s3">
+                                                                                <span class="task-cat teal accent-4">on</span>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td> Maintenir Et AMELIORER </td>
+                                                                        <td>
+                                                                            <%= maintenir[i].date %>
+                                                                        </td>
+
+
+                                                                        <td>
+                                                                            <a href="/edit?id=<%= maintenir[i].id %>&id_user=<%= maintenir[i].id_user %>&type=maintenir" class="btn-floating waves-effect waves-light blue lightrn-1">
+                                                                                <i class="material-icons">mode_edit</i>
+                                                                            </a>
+                                                                        </td>
+
+                                                                        <td>
+                                                                            <form action="/delete/maintenir/<%= maintenir[i].id %>/<%= maintenir[i].id_user %>" method="get">
+
+                                                                                <button type="submit" class="btn-floating waves-effect waves-light pink lightrn-1">
               <i class="material-icons">delete</i>
               </button>
-      
-              </form>
-              </td>
-              </tr>
-              <% } %>
+
+                                                                            </form>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <% } %>
 
 
-        </tbody>
+                                    </tbody>
 
 
-</table>
-</div>
-
-
-
- 
+                                </table>
+                            </div>
 
 
 
-                                                          <!-- //////////////////////////////////////////////////////////////////////////// -->
-                                                        </div>
-                                                        <!--end container-->
-                                                      </section>
-                                                      <!-- END CONTENT -->
-                                                      <!-- START RIGHT SIDEBAR NAV-->
-                                                      <aside id="right-sidebar-nav">
-                                                        <ul id="chat-out" class="side-nav rightside-navigation right-aligned ps-container ps-active-y" style="transform: translateX(100%);">
-                                                          <li class="li-hover">
-                                                            <div class="row">
-                                                              <div class="col s12 border-bottom-1 mt-5">
-                                                                <ul class="tabs">
-                                                                  <li class="tab col s4">
-                                                                    <a href="#activity" class="active">
-                                                                      <span class="material-icons">graphic_eq</span>
-                                                                    </a>
-                                                                  </li>
-                                                                  <li class="tab col s4">
-                                                                    <a href="#chatapp">
-                                                                      <span class="material-icons">face</span>
-                                                                    </a>
-                                                                  </li>
-                                                                  <li class="tab col s4">
-                                                                    <a href="#settings">
-                                                                      <span class="material-icons">settings</span>
-                                                                    </a>
-                                                                  </li>
-                                                                  <li class="indicator" style="right: 186px; left: 0px;"></li>
-                                                                </ul>
-                                                              </div>
-                                                              <div id="settings" class="col s12" style="display: none;">
-                                                                <h6 class="mt-5 mb-3 ml-3">GENERAL SETTINGS</h6>
-                                                                <ul class="collection border-none">
-                                                                  <li class="collection-item border-none">
-                                                                    <div class="m-0">
-                                                                      <span class="font-weight-600">Notifications</span>
-                                                                      <div class="switch right">
-                                                                        <label>
+
+
+
+
+                            <!-- //////////////////////////////////////////////////////////////////////////// -->
+                        </div>
+                        <!--end container-->
+                    </section>
+                    <!-- END CONTENT -->
+                    <!-- START RIGHT SIDEBAR NAV-->
+                    <aside id="right-sidebar-nav">
+                        <ul id="chat-out" class="side-nav rightside-navigation right-aligned ps-container ps-active-y" style="transform: translateX(100%);">
+                            <li class="li-hover">
+                                <div class="row">
+                                    <div class="col s12 border-bottom-1 mt-5">
+                                        <ul class="tabs">
+                                            <li class="tab col s4">
+                                                <a href="#activity" class="active">
+                                                    <span class="material-icons">graphic_eq</span>
+                                                </a>
+                                            </li>
+                                            <li class="tab col s4">
+                                                <a href="#chatapp">
+                                                    <span class="material-icons">face</span>
+                                                </a>
+                                            </li>
+                                            <li class="tab col s4">
+                                                <a href="#settings">
+                                                    <span class="material-icons">settings</span>
+                                                </a>
+                                            </li>
+                                            <li class="indicator" style="right: 186px; left: 0px;"></li>
+                                        </ul>
+                                    </div>
+                                    <div id="settings" class="col s12" style="display: none;">
+                                        <h6 class="mt-5 mb-3 ml-3">GENERAL SETTINGS</h6>
+                                        <ul class="collection border-none">
+                                            <li class="collection-item border-none">
+                                                <div class="m-0">
+                                                    <span class="font-weight-600">Notifications</span>
+                                                    <div class="switch right">
+                                                        <label>
                                                                           <input checked="" type="checkbox">
                                                                             <span class="lever"></span>
                                                                           </label>
-                                                                        </div>
-                                                                      </div>
-                                                                      <p>Use checkboxes when looking for yes or no answers.</p>
-                                                                    </li>
-                                                                    <li class="collection-item border-none">
-                                                                      <div class="m-0">
-                                                                        <span class="font-weight-600">Show recent activity</span>
-                                                                        <div class="switch right">
-                                                                          <label>
+                                                    </div>
+                                                </div>
+                                                <p>Use checkboxes when looking for yes or no answers.</p>
+                                            </li>
+                                            <li class="collection-item border-none">
+                                                <div class="m-0">
+                                                    <span class="font-weight-600">Show recent activity</span>
+                                                    <div class="switch right">
+                                                        <label>
                                                                             <input checked="" type="checkbox">
                                                                               <span class="lever"></span>
                                                                             </label>
-                                                                          </div>
-                                                                        </div>
-                                                                        <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
-                                                                      </li>
-                                                                      <li class="collection-item border-none">
-                                                                        <div class="m-0">
-                                                                          <span class="font-weight-600">Notifications</span>
-                                                                          <div class="switch right">
-                                                                            <label>
+                                                    </div>
+                                                </div>
+                                                <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
+                                            </li>
+                                            <li class="collection-item border-none">
+                                                <div class="m-0">
+                                                    <span class="font-weight-600">Notifications</span>
+                                                    <div class="switch right">
+                                                        <label>
                                                                               <input type="checkbox">
                                                                                 <span class="lever"></span>
                                                                               </label>
-                                                                            </div>
-                                                                          </div>
-                                                                          <p>Use checkboxes when looking for yes or no answers.</p>
-                                                                        </li>
-                                                                        <li class="collection-item border-none">
-                                                                          <div class="m-0">
-                                                                            <span class="font-weight-600">Show recent activity</span>
-                                                                            <div class="switch right">
-                                                                              <label>
+                                                    </div>
+                                                </div>
+                                                <p>Use checkboxes when looking for yes or no answers.</p>
+                                            </li>
+                                            <li class="collection-item border-none">
+                                                <div class="m-0">
+                                                    <span class="font-weight-600">Show recent activity</span>
+                                                    <div class="switch right">
+                                                        <label>
                                                                                 <input type="checkbox">
                                                                                   <span class="lever"></span>
                                                                                 </label>
-                                                                              </div>
-                                                                            </div>
-                                                                            <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
-                                                                          </li>
-                                                                          <li class="collection-item border-none">
-                                                                            <div class="m-0">
-                                                                              <span class="font-weight-600">Show your emails</span>
-                                                                              <div class="switch right">
-                                                                                <label>
+                                                    </div>
+                                                </div>
+                                                <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
+                                            </li>
+                                            <li class="collection-item border-none">
+                                                <div class="m-0">
+                                                    <span class="font-weight-600">Show your emails</span>
+                                                    <div class="switch right">
+                                                        <label>
                                                                                   <input type="checkbox">
                                                                                     <span class="lever"></span>
                                                                                   </label>
-                                                                                </div>
-                                                                              </div>
-                                                                              <p>Use checkboxes when looking for yes or no answers.</p>
-                                                                            </li>
-                                                                            <li class="collection-item border-none">
-                                                                              <div class="m-0">
-                                                                                <span class="font-weight-600">Show Task statistics</span>
-                                                                                <div class="switch right">
-                                                                                  <label>
+                                                    </div>
+                                                </div>
+                                                <p>Use checkboxes when looking for yes or no answers.</p>
+                                            </li>
+                                            <li class="collection-item border-none">
+                                                <div class="m-0">
+                                                    <span class="font-weight-600">Show Task statistics</span>
+                                                    <div class="switch right">
+                                                        <label>
                                                                                     <input type="checkbox">
                                                                                       <span class="lever"></span>
                                                                                     </label>
-                                                                                  </div>
-                                                                                </div>
-                                                                                <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
-                                                                              </li>
-                                                                            </ul>
-                                                                          </div>
-                                                                        </div>
-                                                                      </li>
-                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 326px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
-                                                                        <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
-                                                                      </div>
-                                                                      <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
-                                                                        <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
-                                                                      </div>
-                                                                    </ul>
-                                                                  </aside>
-                                                                  <!-- END RIGHT SIDEBAR NAV-->
-                                                                </div>
-                                                                <!-- END WRAPPER -->
-                                                              </div>
-                                                              <!-- END MAIN -->
-                                                              <!-- //////////////////////////////////////////////////////////////////////////// -->
-                                                              <!-- START FOOTER -->
-                                                              <%  include includes/footer.ejs %>
+                                                    </div>
+                                                </div>
+                                                <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                <div class="ps-scrollbar-y" style="top: 0px; height: 326px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                                <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                            </div>
+                            <div class="ps-scrollbar-y-rail" style="top: 0px; height: 571px; right: 3px;">
+                                <div class="ps-scrollbar-y" style="top: 0px; height: 377px;"></div>
+                            </div>
+                        </ul>
+                    </aside>
+                    <!-- END RIGHT SIDEBAR NAV-->
+            </div>
+            <!-- END WRAPPER -->
+        </div>
+        <!-- END MAIN -->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!-- START FOOTER -->
+        <%  include includes/footer.ejs %>
 
-                                                              <!-- END FOOTER -->
-                                                              <!-- ================================================
+            <!-- END FOOTER -->
+            <!-- ================================================
 Scripts
 ================================================ -->
-                                                              <!-- jQuery Library -->
-                                                              <script type="text/javascript" src="vendors/jquery-3.2.1.min.js"></script>
-                                                              <!--materialize js-->
-                                                              <script type="text/javascript" src="js/materialize.min.js"></script>
-                                                              <!--scrollbar-->
-                                                              <script type="text/javascript" src="vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-                                                              <!--plugins.js - Some Specific JS codes for Plugin Settings-->
-                                                              <script type="text/javascript" src="js/plugins.js"></script>
-                                                              <!--custom-script.js - Add your own theme custom JS-->
-                                                              <script type="text/javascript" src="js/custom-script.js"></script>
-                                                              <script>
-function tab1() {
-var x = document.getElementById("tab1");
-if (x.style.display === "none") {
-x.style.display = "block";
-} else {
-x.style.display = "none";
-}
-}
-function tab2() {
-var x = document.getElementById("tab2");
-if (x.style.display === "none") {
-x.style.display = "block";
-} else {
-x.style.display = "none";
-}
-}
-function tab3() {
-var x = document.getElementById("tab3");
-if (x.style.display === "none") {
-x.style.display = "block";
-} else {
-x.style.display = "none";
-}
-}
-function tab4() {
-var x = document.getElementById("tab4");
-if (x.style.display === "none") {
-x.style.display = "block";
-} else {
-x.style.display = "none";
-}
-}
-</script>
-                                                              <div class="hiddendiv common"></div>
-                                                              <div class="drag-target" data-sidenav="chat-out" style="right: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
-                                                              <div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
-                                                            </body>
-                                                          </html>
+            <!-- jQuery Library -->
+            <script type="text/javascript" src="vendors/jquery-3.2.1.min.js"></script>
+            <!--materialize js-->
+            <script type="text/javascript" src="js/materialize.min.js"></script>
+            <!--scrollbar-->
+            <script type="text/javascript" src="vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+            <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+            <script type="text/javascript" src="js/plugins.js"></script>
+            <!--custom-script.js - Add your own theme custom JS-->
+            <script type="text/javascript" src="js/custom-script.js"></script>
+            <script>
+                function tab1() {
+                    var x = document.getElementById("tab1");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+
+                function tab2() {
+                    var x = document.getElementById("tab2");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+
+                function tab3() {
+                    var x = document.getElementById("tab3");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+
+                function tab4() {
+                    var x = document.getElementById("tab4");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+            <div class="hiddendiv common"></div>
+            <div class="drag-target" data-sidenav="chat-out" style="right: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+            <div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+    </body>
+
+</html>
