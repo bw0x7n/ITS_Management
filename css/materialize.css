@@ -9691,7 +9691,7 @@ button.picker__close:focus {
 .bouton {
     display: inline-block;
     width: 350px;
-    height: 50px;
+    height: auto;
     line-height: 50px;
     vertical-align: middle;
     text-align: center;
